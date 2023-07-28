@@ -6,6 +6,8 @@ You can see the output reports of the github actions script on the "Actions" tab
 
 For this to work, you should:
 
+Go to Setup and accerss actions in settings!
+
 1. enable GitHub Actions with the correct permissions:
 
 * Under your repository name (gh_actions_test), click  Settings. If you cannot see the "Settings" tab, select the  dropdown menu, then click Settings.
