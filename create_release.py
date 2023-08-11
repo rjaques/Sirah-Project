@@ -7,7 +7,7 @@ import sys
 
 working_dir = "work-in-progress"
 redirect_template_fp  = "templates/redirect.html"
-base_url = "https://pverkind.github.io/sira-project-pv/"
+base_url = "https://rjaques.github.io/sirah-project/"
 
 try:
     release_folder = sys.argv[1]
