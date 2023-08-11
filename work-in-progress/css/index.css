@@ -1,0 +1,372 @@
+body {
+    font-family: "Amiri", "Times New Roman", "Serif";
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Set the font for ltr elements to Times New Roman (because of diacritics display issues with Amiri on Firefox) */
+*[dir="ltr"] {
+    font-family: "Times New Roman";
+  }
+
+h1 { 
+    color: #05386b; 
+    font-size: 30px;
+    text-align: center;
+}
+h2 { 
+    color: #05386b; 
+    font-size: 26px;
+    text-align: center;
+}
+h3 { 
+    /*font-family: 'Aref Ruqaa';*/
+    color: #379683; 
+    font-size: 26px;
+    text-align: center;
+}
+h4 { 
+    /*font-family: 'Aref Ruqaa';*/
+    color: maroon; 
+    font-size: 23px;
+    text-align: center;
+}
+h5 { 
+    color: seagreen; 
+    font-size: 20px;
+    text-align: center;
+}
+h6 { 
+    color: #333; 
+    font-size: 18px;
+    text-align: center;
+}
+
+.single-witness {
+    width: 50vw;
+    margin: auto;  /* center the div */
+}
+
+p {
+    word-wrap: break-word;
+    white-space: wrap;
+}
+
+.quran {
+    color: darkgreen;
+}
+.quran:before {
+    content:"﴿";
+}
+.quran:after {
+    content:"﴾";
+}
+
+.page-no {
+    text-decoration: none;  /* do not underline page number link*/
+}
+.poetry-line {
+    display: block;
+}
+.hemistich2:before {
+    content: "\00a0 \00a0 \00a0 \00a0 ";
+}
+
+.ref-link {
+    color: grey;
+    font-style: italic;
+}
+.reference-container {
+    margin-top: 10px;
+}
+.ref-title {
+    font-style: italic;
+}
+
+
+/* the header and horizontal menu bar: */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+
+#menu-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #379683;
+    color: #edf5e1;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#menu-bar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+}
+
+/*Main content of the page (excluding header, side bar, table of contents): */
+
+#main {
+    text-align: center;  /* center the pageContent div*/
+    display: block;
+    height: 100%;
+}
+
+#pageContent {
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: initial;
+}
+
+/* The hamburger-menu switches that open the sidebars: */
+
+#menuToggle {
+    position: sticky;
+    top: 10px;
+    left: 2px;
+    float: left;
+}
+
+#tocToggle {
+    display: block;
+    position: sticky;
+    top: 10px;
+    right: 2px;
+    float: right;
+}
+
+
+/* The sidebar menus (based on https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp) */
+
+#dashboard {  /* that is, the left-hand-side menu */
+    /* start width = 20% - change this with JavaScript when the menu is closed: */
+    width: 20%; 
+    max-height: 100vh;
+    /* stick to the top left of its parent container: */
+    position: sticky;  
+    top: 0;
+    left: 0;
+    /* align this div to the left side of the screen: */
+    float: left;  
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    z-index: 10; /* Stay visible above the text */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto;
+    padding-top: 20px; /* Place content 60px from the top */
+    text-align: initial;
+}
+
+#toc {
+    width: 20%; 
+    max-height: 100vh;
+    /*background-color: #333;
+    color: #818181;*/
+    /* stick to the top right of its parent container: */
+    position: sticky;
+    top: 0;
+    right: 0;
+    /* align this div to the right side of the screen: */
+    float: right;
+    z-index: 10;  /* Stay visible above the text */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto;
+    padding-top: 20px; /* Place content 60px from the top */
+    padding-right: 10px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    text-align: initial;
+}
+
+
+/* Hiding scrollbar for Chrome, Safari and Opera */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+.sidebar {
+    background-color: whitesmoke;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+
+/* Style the hamburger-menu buttons used to open the sidebars */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #379683;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.openbtn:hover {
+    background-color: #05386b;
+}
+  
+/* Style the sidebar links */
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    color: #666;
+}
+
+#dashboard a {
+    padding: 8px 8px 8px 8px;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #222;
+}
+
+/* Position and style the sidebars' close buttons (X) */
+
+#dashboard .closebtn {
+    padding: 8px;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    font-size: 36px;
+}
+
+#toc .closebtn {
+    padding: 8px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 36px;
+}
+
+
+/* Style the nested list elements*/
+
+#toc-list, #toc-list ul, #toc-list li {
+    margin: 2;
+    padding: 0;
+    list-style-type: none;
+}
+#toc-list ul { padding-right: 0.3em; }
+#toc-list li {
+    /* Add vertical dotted lines to the right of each list item: */
+    border-right: 1px dotted #aaa;
+    padding-right: 13px;
+    /* Add image of horizontal dotted line to the right of each list item: */
+    background: url(../../images/dotted.gif) scroll no-repeat right 0.8em;
+}
+#toc-list li:last-child {
+    border-right-width: 0px;
+    padding-right: 14px;
+    background: url(../../images/dottedangle.gif) scroll no-repeat right top;
+}
+
+/* Style the sidebar lists */
+.sidebar ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 8px 8px 8px 24px; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+
+/* Witness variant columns : */
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    /*overflow-y: scroll;*/
+    overflow-y: hidden;
+    white-space: nowrap;              /* this keeps all cards on the same line*/
+    /*width: 70vw;*/
+    margin: auto;
+    text-align: center;
+}
+.centered-wrapper {
+    display: inline-block;
+    /*display: flex;
+    align-items: center;*/
+}
+
+.card {
+    display: inline-block;            /* needed to keep all cards on the same line */
+    width: 25vw;                      /* start with ca. 1/3 of the screen for the column width */
+    resize:both;                      /* make the card resizable */
+    overflow:auto;                    /* (this is necessary in combination with resize:both) */
+    border-left: 1px solid grey;    /* acts as divider between the text fragments */
+    position: relative;
+    vertical-align:top;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: normal;              /* override the white-space: nowrap of the scrolling-wrapper */
+    text-align: initial;
+}
+
+.index-card {
+    width:15vw;
+}
+
+.card-cb {
+    float: right;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.index {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.plus {
+    display: inline-block;
+    vertical-align: top;
+    color: #379683;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: -35px;
+}
+
+.hide {
+    cursor: pointer;
+    color: grey;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Diff visualization styling: */
+/* NB: wikEdDiff automatically adds an additional css to style its output! */
+
+.added {
+    background-color: lightblue;
+}
+.wikEdDiffDelete {
+    text-decoration: line-through;
+    color: red;
+}
+/*.wikEdDiffSpaceSymbol {
+    display: none;
+}
+.wikEdDiffSpace {
+    display: none;
+}*/
+.wikEdDiffNewline {
+    display: none;
+}

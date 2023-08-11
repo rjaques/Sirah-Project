@@ -1,0 +1,23 @@
+#OpenITI-RKJ#
+
+#META# الكتاب: سيرة النبوية لمحمد بن اسحاق في روية العلاء بن هارون الواسطي
+#META# المؤلف: محمد بن اسحاق بن يسار المطلبي
+#META# المحقق: روبرت كيبين جيكس
+#META# الطبعة:
+#META# الناشر:
+#META# Transliterated Name: ʿAlāʾ b. Hārūn al-Wāsiṭī
+#META# Tag Name: WAHWA
+#META# MSLibrary
+#META# ShelfMarc:
+#META# Folios:
+#META# Link
+
+# @STJXV04P279A_BEG_WAHWA
+VAR_STRDV01P293A حدثنا علي بن عبد الله الفرغاني قال نا إدريس بن محمد بن أبي الرباب قال نا أسباط بن عبد الواحد قال نا @TR1_AHWA@ العلاء بن هارون عن محمد بن إسحاق عن عبد الرحمن بن القاسم عن أبيه عن عائشة أن رسول الله صلى الله عليه وسلم أمر سهلة بنت سهيل وهي مستحاضة أن تغتسل لكل صلاة فشق ذلك عليها فأمرها أن تجمع بين الظهر والعصر في غسل والمغرب والعشاء في غسل وتغتسل للصبح. @STJXV04P279A_END_WAHWA
+PageV04P279
+# @COMMENT: Sahlah bint Suhayl is mentioned three times in HSNX (HSNXV01P322A as one of the first to migrate to Abyssinia, HSNXV01P365A as one of the first to return from Abyssinia, and HSNXV02P368H where she is mentioned again as one of the returnees from Abyssinia, where she is also mentioned by WYBWS and WSFAB. She is also mentioned in WMSAH, WASKA, and WHAYA but in a different context. This passage is not found in HSNX but appears to be an aside common in Ibn Isḥāq. Placement is based on her first mention.
+
+# @STRDV01P293A_BEG_WAHWA
+VAR_STJXV04P279A حدثنا سلامة بن مكحول الرملي حدثنا إدريس بن محمد بن أبي الرباب الرملي حدثنا أسباط بن عبد الواحد الرملي حدثنا @TR1_AHWA@ العلاء بن هارون أخو يزيد بن هارون حدثنا محمد بن إسحاق عن عبد الرحمن بن القاسم عن أبيه عن عائشة أن رسول الله صلى الله عليه وآله وسلم أمر سهلة بنت سهيل وهي مستحاضة أن تغتسل لكل صلاة فشق ذلك عليها وأمرها أن تجمع بين الظهر والعصر في غسل والمغرب والعشاء في غسل وتغتسل للصبح. @STRDV01P293A_END_WAHWA
+PageV01P293
+# @COMMENT: STRDV01P293A states لم يروه عن العلاء بن هارون إلا أسباط تفرد به ابن أبي الرباب ولا يحفظ للعلاء بن هارون إلا دون عشرة أحاديث مخارجها من الرملة وأظنه كان وقع إلى الرملة من العراق لأنا لا نحفظ عن الواسطيين عنه شيئا وهو ثقة."

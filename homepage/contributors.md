@@ -1,3 +1,0 @@
-## Contributors 
-
-### Anirudh Sharma

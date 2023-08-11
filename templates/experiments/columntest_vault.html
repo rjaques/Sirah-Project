@@ -1,0 +1,278 @@
+<html dir="rtl">
+
+<header>
+  <style>
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      //overflow-y: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
+    .card {
+      display: inline-block;
+      width: 30vw;
+      //border: 2px solid grey;
+      //border-radius: 10px;
+      border-left: 1px solid grey;
+      position: relative;
+      vertical-align:top;
+      resize:both;
+      overflow:auto;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .index {
+      vertical-align:top;
+      display: inline-block;
+    }
+    .plus {
+      display: inline-block;
+      vertical-align: center;
+      color: lightgreen;
+      font-size: 50px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hide {
+      cursor: pointer;
+      color: grey;
+      font-weight: italic;
+    }
+
+    .hidden {
+      display: none;
+    }
+    p {
+      word-wrap: break-word;
+      white-space: wrap;
+    }
+    
+  </style>
+</header>
+<body>
+
+<h2>First fragment</h2>
+
+<p>The texts come from Ibn Saʿd</p>
+
+<div class="scrolling-wrapper">
+
+  <div class="index">
+  <div class="plus"><span onclick="toggleIndex(this)">+</span></div>
+  <div class="card index-card hidden">
+    <span class="hide" onclick="toggleIndex(this)">(hide)</span>
+    <span class="hidden" onclick="toggleIndex(this)"></span>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="HBFXV02P853A" value="HBFXV02P853A" id="HBFXV02P853A-index-cb" onclick="toggleCard(this)" checked> 
+      <label title="full reference here" for="HBFXV02P853A" >HBFXV02P853A</a></label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="HBHXV03P283A" value="HBHXV03P283A" id="HBHXV03P283A-index-cb" onclick="toggleCard(this)" checked>
+      <label title="full reference here" for="HBHXV03P283A">HBHXV03P283A</label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="STBXV13P072A" value="STBXV13P072A" id="STBXV13P072A-index-cb" onclick="toggleCard(this)" checked>
+      <label title="full reference here" for="STBXV13P072A">STBXV13P072A</label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="NSSXV03P204A" value="NSSXV03P204A" id="NSSXV03P204A-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="NSSXV03P204A">NSSXV03P204A</label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="RJXXV09P179A" value="RJXXV09P179A" id="RJXXV09P179A-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="RJXXV09P179A">RJXXV09P179A</label>
+    </div>
+    <div class="cb-container"> 
+      <input type="checkbox" class="index-check" name="HYGHV04P004A" value="HYGHV04P004A" id="HYGHV04P004A-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="HYGHV04P004A">HYGHV04P004A</label>
+    </div>
+    <div class="cb-container">  
+      <input type="checkbox" class="index-check" name="STMBV14P138A" value="STMBV14P138A" id="STMBV14P138A-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="STMBV14P138A">STMBV14P138A</label>
+    </div>
+  </div>
+  </div>
+
+  <div class="card" id="HBFXV02P853A">
+    <input type="checkbox" id="HBFXV02P853A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا عبد الله قال حدثني أبي نا يعقوب بن إبراهيم بن سعد نا أبي عن ابن اسحاق قال وحدثني هشام بن عروة عن أبيه عروة عن عبد الله بن جعفر بن أبي طالب قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب. 
+    </p>
+  </div>
+
+  <div class="card" id="HBHXV03P283A">
+    <input type="checkbox" id="HBHXV03P283A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+       يعقوب حدثنا أبي عن ابن اسحاق قال فحدثني هشام بن عروة بن الزبير عن أبيه عروة عن عبد الله بن جعفر بن أبي طالب قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card" id="STBXV13P072A">
+    <input type="checkbox" id="STBXV13P072A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا عبد الله بن أحمد بن حنبل قال ثنا أحمد بن محمد بن أيوب صاحب المغازي قال ثنا إبراهيم بن سعد عن محمد بن اسحاق عن هشام بن عروة عن أبيه عن عبد الله بن جعفر أن النبي صلى الله عليه وسلم قال أمرت أن أبشر خديجة ببيت في الجنة من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card hidden" id="NSSXV03P204A">
+    <input type="checkbox" id="NSSXV03P204A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      أخبرنا أحمد بن جعفر ثنا عبد الله بن أحمد بن حنبل حدثني أبي ثنا يعقوب بن إبراهيم بن سعد حدثني أبي عن ابن اسحاق قال حدثني هشام بن عروة عن أبيه عن عبد الله بن جعفر بن أبي طالب رضي الله عنه قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت في الجنة من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card hidden" id="RJXXV09P179A">
+    <input type="checkbox" id="RJXXV09P179A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      وأخبرنا أبو محمد الحسن بن علي بن الحسين بن محمد الأسدي بدمشق أن حده أبا القاسم الحسين أخبرهم أبنا أبو القاسم علي بن محمد بن علي المصيصي قراءة عليه قال قرأت على أبي نصر محمد بن أحمد بن الحسين بن عبد العزيز العكبري بها فأقر به ثنا أبي ثنا أبو خليفة ثنا علي بن المديني ثنا يعقوب بن إبراهيم بن سعد ثنا أبي عن ابن اسحاق حدثني هشام بن عروة بن الزبير عن أبيه عن عبد الله بن جعفر بن أبي طالب قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card hidden" id="HYGHV04P004A">
+    <input type="checkbox" id="HYGHV04P004A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا يعقوب حدثنا أبى عن ابن اسحاق حدثنى هشام بن عروة بن الزبير عن أبيه عن عبد الله بن جعفر قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب
+    </p>
+  </div>
+
+
+  <div class="card hidden" id="STMBV14P138A">
+    <input type="checkbox" id="STMBV14P138A-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا عبدالله بن أحمد بن حنبل قال ثنا أحمد بن محمد بن أيوب صاحب المغازي قال ثنا إبراهيم بن سعد عن محمد بن اسحاق عن هشام بن عروة عن أبيه عن عبد الله بن جعفر أن النبي صلى الله عليه وسلم قال أمرت أن أبشر خديجة ببيت في الجنة من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+</div>
+
+
+
+<h2>Second fragment</h2>
+<p>(same text fragments with slightly altered IDs)</p>
+
+<div class="scrolling-wrapper">
+
+  <div class="index">
+  <div class="plus"><span onclick="toggleIndex(this)">+</span></div>
+  <div class="card index-card hidden">
+    <span class="hide" onclick="toggleIndex(this)">(hide)</span>
+    <span class="hidden" onclick="toggleIndex(this)"></span>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="HBFXV02P853" value="HBFXV02P853" id="HBFXV02P853-index-cb" onclick="toggleCard(this)" checked> 
+      <label title="full reference here" for="HBFXV02P853" >HBFXV02P853</a></label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="HBHXV03P283" value="HBHXV03P283" id="HBHXV03P283-index-cb" onclick="toggleCard(this)" checked>
+      <label title="full reference here" for="HBHXV03P283">HBHXV03P283</label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="STBXV13P072" value="STBXV13P072" id="STBXV13P072-index-cb" onclick="toggleCard(this)" checked>
+      <label title="full reference here" for="STBXV13P072">STBXV13P072</label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="NSSXV03P204" value="NSSXV03P204" id="NSSXV03P204-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="NSSXV03P204">NSSXV03P204</label>
+    </div>
+    <div class="cb-container">
+      <input type="checkbox" class="index-check" name="RJXXV09P179" value="RJXXV09P179" id="RJXXV09P179-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="RJXXV09P179">RJXXV09P179</label>
+    </div>
+    <div class="cb-container"> 
+      <input type="checkbox" class="index-check" name="HYGHV04P004" value="HYGHV04P004" id="HYGHV04P004-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="HYGHV04P004">HYGHV04P004</label>
+    </div>
+    <div class="cb-container">  
+      <input type="checkbox" class="index-check" name="STMBV14P138" value="STMBV14P138" id="STMBV14P138-index-cb" onclick="toggleCard(this)">
+      <label title="full reference here" for="STMBV14P138">STMBV14P138</label>
+    </div>
+  </div>
+  </div>
+
+  <div class="card" id="HBFXV02P853">
+    <input type="checkbox" id="HBFXV02P853-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا عبد الله قال حدثني أبي نا يعقوب بن إبراهيم بن سعد نا أبي عن ابن اسحاق قال وحدثني هشام بن عروة عن أبيه عروة عن عبد الله بن جعفر بن أبي طالب قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب. 
+    </p>
+  </div>
+
+  <div class="card" id="HBHXV03P283">
+    <input type="checkbox" id="HBHXV03P283-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+       يعقوب حدثنا أبي عن ابن اسحاق قال فحدثني هشام بن عروة بن الزبير عن أبيه عروة عن عبد الله بن جعفر بن أبي طالب قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card" id="STBXV13P072">
+    <input type="checkbox" id="STBXV13P072-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا عبد الله بن أحمد بن حنبل قال ثنا أحمد بن محمد بن أيوب صاحب المغازي قال ثنا إبراهيم بن سعد عن محمد بن اسحاق عن هشام بن عروة عن أبيه عن عبد الله بن جعفر أن النبي صلى الله عليه وسلم قال أمرت أن أبشر خديجة ببيت في الجنة من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card hidden" id="NSSXV03P204">
+    <input type="checkbox" id="NSSXV03P204-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      أخبرنا أحمد بن جعفر ثنا عبد الله بن أحمد بن حنبل حدثني أبي ثنا يعقوب بن إبراهيم بن سعد حدثني أبي عن ابن اسحاق قال حدثني هشام بن عروة عن أبيه عن عبد الله بن جعفر بن أبي طالب رضي الله عنه قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت في الجنة من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card hidden" id="RJXXV09P179">
+    <input type="checkbox" id="RJXXV09P179-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      وأخبرنا أبو محمد الحسن بن علي بن الحسين بن محمد الأسدي بدمشق أن حده أبا القاسم الحسين أخبرهم أبنا أبو القاسم علي بن محمد بن علي المصيصي قراءة عليه قال قرأت على أبي نصر محمد بن أحمد بن الحسين بن عبد العزيز العكبري بها فأقر به ثنا أبي ثنا أبو خليفة ثنا علي بن المديني ثنا يعقوب بن إبراهيم بن سعد ثنا أبي عن ابن اسحاق حدثني هشام بن عروة بن الزبير عن أبيه عن عبد الله بن جعفر بن أبي طالب قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+  <div class="card hidden" id="HYGHV04P004">
+    <input type="checkbox" id="HYGHV04P004-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا يعقوب حدثنا أبى عن ابن اسحاق حدثنى هشام بن عروة بن الزبير عن أبيه عن عبد الله بن جعفر قال قال رسول الله صلى الله عليه وسلم أمرت أن أبشر خديجة ببيت من قصب لا صخب فيه ولا نصب
+    </p>
+  </div>
+
+
+  <div class="card hidden" id="STMBV14P138">
+    <input type="checkbox" id="STMBV14P138-int-cb" onclick="toggleCard(this)" checked>
+    <p>
+      حدثنا عبدالله بن أحمد بن حنبل قال ثنا أحمد بن محمد بن أيوب صاحب المغازي قال ثنا إبراهيم بن سعد عن محمد بن اسحاق عن هشام بن عروة عن أبيه عن عبد الله بن جعفر أن النبي صلى الله عليه وسلم قال أمرت أن أبشر خديجة ببيت في الجنة من قصب لا صخب فيه ولا نصب.
+    </p>
+  </div>
+
+</div>
+
+
+<script>
+  /*
+  document.querySelectorAll('.index-check').forEach(item => {
+    item.addEventListener('change', ev => {
+      console.log(ev.target.value);
+      if(ev.target.value) { 
+        document.querySelector('#'+ev.target.value).classList.toggle("hidden");
+      }
+    })
+  });*/
+
+  function toggleCard(checkbox) {
+    // get the id of the text fragment from the checkbox:
+    var id0 = checkbox.id.split("-")[0];
+    // get the value of the clicked checkbox:
+    var thisChecked = checkbox.checked;
+    // set both the internal and external checkboxes to the same:
+    document.querySelector("#"+id0+"-index-cb").checked = thisChecked
+    var cardCB = document.querySelector("#"+id0+"-int-cb")
+    cardCB.checked = thisChecked
+    // hide the card:
+    let card = cardCB.parentNode;
+    card.classList.toggle("hidden")
+  }
+
+  function toggleIndex(el) {
+    console.log(el.parentNode);
+    var index = el.parentNode.parentNode;
+    index.querySelector(".plus").classList.toggle("hidden");
+    index.querySelector(".index-card").classList.toggle("hidden")
+  }
+</script>
+</body>
+</html>

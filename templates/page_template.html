@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">-->
+  <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <script src="./js/listCollapse.js" type="text/javascript" language="javascript1.2"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/kitabDiff.js" type="module"></script>
+  <script src="./js/openITI.js" type="module"></script>
+  <script src="./js/wikEdDiff.js" type="module"></script>
+  <!--INSERT_PAGE_SPECIFIC_CSS_HERE-->
+</head>
+<body onload="compactMenu('toc-list',false,'&plusmn; ');">
+  <div id="header">
+    <a href="index.html">
+      <img src="../images/sirahTopImage.png" alt="Logo" class="header-image" height="200">
+    </a>
+  </div>
+  <div id="menu-bar">
+    TOP_MENU_BAR_HERE
+  </div>
+  <div id="main">
+    <div id="menuToggle">
+      <button id="openDashboardBtn" class="openbtn hidden">&#9776;</button>
+    </div>
+    <div id="dashboard" class="sidebar" dir="ltr">  
+      <a href="javascript:void(0)" id="closeDashboardBtn" class="closebtn">&times;</a>
+      <a id="witnessListLink">witness versions</a>
+      <div id="witnessList" class="hidden">
+        WITNESS_LIST_HERE
+      </div>
+      SIDE_MENU_BAR_HERE
+    </div>
+    <div id="pageContent">
+      PAGE_CONTENT_HERE
+    </div>
+    TABLE_OF_CONTENTS_HERE
+  </div>
+</body>
+
+</html>

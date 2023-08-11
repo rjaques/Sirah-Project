@@ -1,0 +1,141 @@
+
+<html dir="rtl">
+
+<header>
+  <style>
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      //overflow-y: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
+    .card {
+      display: inline-block;
+      width: 30vw;
+      //border: 2px solid grey;
+      //border-radius: 10px;
+      border-left: 1px solid grey;
+      position: relative;
+      vertical-align:top;
+      resize:both;
+      overflow:auto;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .index {
+      vertical-align:top;
+      display: inline-block;
+    }
+    .plus {
+      display: inline-block;
+      vertical-align: center;
+      color: lightgreen;
+      font-size: 50px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hide {
+      cursor: pointer;
+      color: grey;
+      font-weight: italic;
+    }
+
+    .hidden {
+      display: none;
+    }
+    p {
+      word-wrap: break-word;
+      white-space: wrap;
+    }
+    
+  </style>
+</header>
+<body>
+
+<h2>First fragment</h2>
+
+
+
+<div class="scrolling-wrapper">
+
+  <div class="index">
+    <div class="plus">
+      <span onclick="toggleIndex(this)">+</span>
+    </div>
+    <div class="card index-card hidden">
+      <span class="hide" onclick="toggleIndex(this)">(hide)</span>
+
+      <div class="cb-container">
+        <input type="checkbox" class="index-check" name="id1" value="id1" id="id1-index-cb" onclick="toggleCard(this)" checked> 
+        <label title="ref1" for="id1">id1</a></label>
+      </div>
+
+
+      <div class="cb-container">
+        <input type="checkbox" class="index-check" name="id2" value="id2" id="id2-index-cb" onclick="toggleCard(this)" checked> 
+        <label title="ref2" for="id2">id2</a></label>
+      </div>
+
+
+      <div class="cb-container">
+        <input type="checkbox" class="index-check" name="id3" value="id3" id="id3-index-cb" onclick="toggleCard(this)" checked> 
+        <label title="ref3" for="id3">id3</a></label>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="card" id="id1">
+    <input type="checkbox" id="id1-card-cb" onclick="toggleCard(this)" checked>
+    <p>
+      text1
+    </p>
+  </div>
+
+
+  <div class="card" id="id2">
+    <input type="checkbox" id="id2-card-cb" onclick="toggleCard(this)" checked>
+    <p>
+      text2
+    </p>
+  </div>
+
+
+  <div class="card" id="id3">
+    <input type="checkbox" id="id3-card-cb" onclick="toggleCard(this)" checked>
+    <p>
+      text3
+    </p>
+  </div>
+
+</div>
+
+
+
+<script>
+
+  function toggleCard(checkbox) {
+    // get the id of the text fragment from the checkbox:
+    var id0 = checkbox.id.split("-")[0];
+    // get the value of the clicked checkbox:
+    var thisChecked = checkbox.checked;
+    // set both the internal and external checkboxes to the same:
+    document.querySelector("#"+id0+"-index-cb").checked = thisChecked
+    var cardCB = document.querySelector("#"+id0+"-card-cb")
+    cardCB.checked = thisChecked
+    // hide the card:
+    let card = cardCB.parentNode;
+    card.classList.toggle("hidden")
+  }
+
+  function toggleIndex(el) {
+    console.log(el.parentNode);
+    var index = el.parentNode.parentNode;
+    index.querySelector(".plus").classList.toggle("hidden");
+    index.querySelector(".index-card").classList.toggle("hidden")
+  }
+</script>
+</body>
+</html>
