@@ -74,7 +74,7 @@ for index, row in selected_columns.iterrows():
 # create a dictionary that contains a verbose citation for each citation code,
 # and store all citations in a markdown file:
 bibl_fp = os.path.join(root_folder, "data", "side_menu", "Bibliography.md")
-splitter = "(\n\|[\|\-]+\| *\n)"  # |------|-----|
+splitter = "(\n\|[\|\-:]+\| *\n)"  # |:-----|-----|
 with open(bibl_fp, mode="r", encoding="utf-8") as f:
     bibliography_md = f.read()
     # remove the current content of the table:

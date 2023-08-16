@@ -1,12 +1,12 @@
 # Bibliography
 
-<!--- KEVIN, DO NOT MAKE CHANGES TO THIS FILE. --->
+<!--- KEVIN, DO NOT MAKE CHANGES TO THE CONTENT OF THE TABLE IN THIS MARKDOWN FILE. --->
 
-<!--- THIS FILE IS GENERATED AUTOMATICALLY FROM THE EXCEL BIBLIOGRAPHY. MAKE ANY CHANGES THERE. --->
+<!--- THE TABLE IS GENERATED AUTOMATICALLY FROM THE EXCEL BIBLIOGRAPHY. MAKE ANY CHANGES THERE. --->
 
 
-| Siglum | Bibliography | OpenITI URI |
-|---------|--------------|-------------|
+| Siglum | Reference | OpenITI text |
+|:-------|-----------|--------------|
 | ???? | ʿAbd al-Ḥaqq b. Ghālib al-Andalusī al-Muḥārabī. *Al-Muḥarar al-wajīz fī tafsīr al-kitāb al-ʿazīz*. Edited by ʿAbd al-Salam ʿAbd al-Shāfī Muḥammad. 6 vols. Beirut: Dār al-kutub al-ʿilmīyah, 2001. |  |
 | ???? | Muḥammad b. Abī Bakr b. Ayyūb b. Qayyim al-Jawzīyah. *Hadāyah al-ḥayārā fī ajwibat al-yahūd waʾl-naṣārā*. Edited by Muḥammad Aḥmad al-Ḥājj. Jidda: Dār al- Qalam and Dār al-shāmīyah, 1996. |  |
 | AAAM | Abū ʿAbd Allāh Muḥammad b. Aḥmad al-Rāzī. *Aḥādīth Abī ʿAbd Allāh al-Rāzī*. Barnāmaj jawāmiʿ al-kalam al-majānī li-mawqaʿ al-shabakat al-Islāmīyah, 2004. |  |
