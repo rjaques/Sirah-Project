@@ -64,21 +64,50 @@ comm_regex = r"# @COMMENT:"
 root_folder = os.getcwd()
 df = pd.read_excel(os.path.join(root_folder, "data", "meta", "Witness_list_sheet.xlsx"))
 selected_columns = df[['Arabic name', 'Witness ']]
+
 witness_dict = {}
 for index, row in selected_columns.iterrows():
     key = row['Witness ']
     value = str(row['Arabic name'])
     witness_dict[key] = value
 
-# create a dictionary that contains a verbose citation for each citation code: 
+# create a dictionary that contains a verbose citation for each citation code,
+# and store all citations in a markdown file:
+bibl_fp = os.path.join(root_folder, "data", "side_menu", "Bibliography.md")
+splitter = "(\n\|[\|\-]+\| *\n)"  # |------|-----|
+with open(bibl_fp, mode="r", encoding="utf-8") as f:
+    bibliography_md = f.read()
+    # remove the current content of the table:
+    spl = re.split(splitter,bibliography_md)
+    bibliography_md = "".join(spl[:2])  # page title + table header
 df = pd.read_excel(os.path.join(root_folder, "data", "meta", "Kevin Bibliography.xlsx"))
-selected_columns = df[['ID', 'short_author', 'short_title']]
+df.sort_values(by="ID", ascending=True, inplace=True)
+df.reset_index(drop=True, inplace=True) # make sure df.iterrows sorts the rows by ID
 bibliography_dict = {}
-for index, row in selected_columns.iterrows():
+for index, row in df.iterrows():
     key = row['ID']
     value = f"<span class='ref-author'>{row['short_author']}</span>, <span class='ref-title'>{row['short_title']}</span>"
     bibliography_dict[key] = value
-
+    # format citation for markdown file:
+    citation = row["Citation"]
+    title = row["short_title"]
+    # italicize title in citation:
+    try:
+        citation = re.sub(title, f"*{title}*", citation)
+    except Exception as e:
+        print(e)
+        print("title:", title)
+    # format the OpenITI uri/url for the markdown file:
+    url = row["URI"]
+    try:
+        uri = url.split("/")[-1]
+        link = f"[🔗]({url})"
+    except:
+        link = ""
+    # store this item in the markdown table:
+    bibliography_md += f"| {key} | {citation} | {link} |\n"
+with open(bibl_fp, mode="w", encoding="utf-8") as f:
+    f.write(bibliography_md)
 
 #########################################################################################################################
         
@@ -897,15 +926,18 @@ def generate_witness_list(file_paths):
     """
     # create a list of all html files in the html folder:
 
-    ul = "<ul>\n"
+    ul_list = []
     for file_path in file_paths:
         id_ = file_path.split("/")[-1].split(".")[0]
         try:
             label = witness_dict[id_]
         except:
             label = id_
-        ul += f"<li><a href='{file_path}'>{label} ({id_})</a></li>\n"
-    ul += "</ul>\n"
+        li = f"<li><a href='{file_path}'>{label} ({id_})</a></li>\n"
+        ul_list.append((label, li))
+    # sort the list by the labels and build the ul element
+    ul = "".join([tup[1] for tup in sorted(ul_list)])
+    ul = "<ul>\n" + ul + "</ul>\n"
     return ul
 
 def convert_markdown_file(fp):
@@ -916,7 +948,7 @@ def convert_markdown_file(fp):
     """
     with open(fp, mode="r", encoding="utf-8") as file:
         md = file.read()
-    html = markdown.markdown(md)
+    html = markdown.markdown(md, extensions=['markdown.extensions.tables'])
     if not html:
         html = "<p>COMING SOON...</p>"
     return html
