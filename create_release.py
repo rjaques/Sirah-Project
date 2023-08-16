@@ -52,8 +52,8 @@ for folder in os.listdir("."):
         earlier_revision_fp = os.path.join(folder, "revision-and-update-notes.html")
         with open(earlier_revision_fp, mode="r", encoding="utf-8") as file:
              html = file.read()
-             html = re.sub(f'{insert_note}\s*<ul>\s*<li>[\s\S]+?</li>',
-                           f'{insert_note}\s*<ul>\n  <li><a href="{release_folder}">{release_url}</a></li>',
+             html = re.sub(f'{insert_note}\s*<ul>',
+                           f'{insert_note}\n<ul>\n  <li><a href="{release_url}">{release_folder}</a></li>',
                            html)
         with open(earlier_revision_fp, mode="w", encoding="utf-8") as file:
             file.write(html)
