@@ -56,7 +56,7 @@ for folder in sorted(os.listdir(".")):
         with open(earlier_revision_fp, mode="r", encoding="utf-8") as file: 
             html = file.read()
         html = re.sub(f'{insert_note}\s*<ul>',
-                      f'{insert_note}\n<ul>\n  <li>{release_link}</li>',
+                      f'{insert_note}\n<ul>\n<li>{release_link}</li>',
                       html)
         if folder == "work-in-progress":
             html = re.sub(r'The current release is\s*<strong>[\s\S]+?</strong>',
