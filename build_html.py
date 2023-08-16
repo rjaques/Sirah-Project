@@ -104,8 +104,12 @@ for index, row in df.iterrows():
         link = f"[🔗]({url})"
     except:
         link = ""
+    try: 
+        note = '<span title="' + row["Notes"] + '">*</span>'
+    except:
+        note = ""
     # store this item in the markdown table:
-    bibliography_md += f"| {key} | {citation} | {link} |\n"
+    bibliography_md += f"| {key} | {citation}{note} | {link} |\n"
 with open(bibl_fp, mode="w", encoding="utf-8") as f:
     f.write(bibliography_md)
 
