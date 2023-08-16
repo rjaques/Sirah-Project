@@ -29,7 +29,6 @@ release_link = f'<a href="{release_url}">{release_folder}</a>'
 revision_fp = "data/side_menu/Revision and Update Notes.md"
 with open(revision_fp, mode="r", encoding="utf-8") as file:
     revision_text = file.read()
-    revision_text = re.sub(r"\r", "", revision_text)
 
 # make the new release version the current version:
 revision_text = re.sub(r"The current release is.+", 
@@ -55,6 +54,8 @@ for folder in sorted(os.listdir(".")):
             continue
         with open(earlier_revision_fp, mode="r", encoding="utf-8") as file: 
             html = file.read()
+        if release_link in html:
+            continue
         html = re.sub(f'{insert_note}\s*<ul>',
                       f'{insert_note}\n<ul>\n<li>{release_link}</li>',
                       html)
