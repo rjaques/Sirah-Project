@@ -21,7 +21,7 @@ except:
     print("RELEASE NAME (generated in Python):", release_folder)
 
 release_url = base_url + release_folder
-release_link = '<a href="{release_url}">{release_folder}</a>'
+release_link = f'<a href="{release_url}">{release_folder}</a>'
 
 # add the new release to the release notes: 
 
