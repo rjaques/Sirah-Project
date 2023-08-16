@@ -9,7 +9,7 @@ import sys
 
 working_dir = "work-in-progress"
 redirect_template_fp  = "templates/redirect.html"
-base_url = "https://rjaques.github.io/sirah-project/"
+base_url = "https://rjaques.github.io/Sirah-Project/"
 
 try:
     release_folder = sys.argv[1]
@@ -21,6 +21,7 @@ except:
     print("RELEASE NAME (generated in Python):", release_folder)
 
 release_url = base_url + release_folder
+release_link = '<a href="{release_url}">{release_folder}</a>'
 
 # add the new release to the release notes: 
 
@@ -46,17 +47,21 @@ if not re.findall(f"{insert_note}\s*\* \[{release_folder}", revision_text):
 with open(revision_fp, mode="w", encoding="utf-8") as file:
           file.write(revision_text)
 
-# Add a reference to the new release in all previous release notes:
-for folder in os.listdir("."):
-    if re.findall("^v\d+", folder):
+# Add a reference to the new release in all previous release notes + work-in-progress html file:
+for folder in sorted(os.listdir(".")):
+    if re.findall("^v\d+", folder) or folder.startswith("work-in"):
         earlier_revision_fp = os.path.join(folder, "revision-and-update-notes.html")
         if not os.path.exists(earlier_revision_fp):
-             continue
-        with open(earlier_revision_fp, mode="r", encoding="utf-8") as file:
-             html = file.read()
-             html = re.sub(f'{insert_note}\s*<ul>',
-                           f'{insert_note}\n<ul>\n  <li><a href="{release_url}">{release_folder}</a></li>',
-                           html)
+            continue
+        with open(earlier_revision_fp, mode="r", encoding="utf-8") as file: 
+            html = file.read()
+        html = re.sub(f'{insert_note}\s*<ul>',
+                      f'{insert_note}\n<ul>\n  <li>{release_link}</li>',
+                      html)
+        if folder == "work-in-progress":
+            html = re.sub(r'The current release is\s*<strong>[\s\S]+?</strong>',
+                          f'The current release is <strong>{release_link}</strong>',
+                          html)
         with open(earlier_revision_fp, mode="w", encoding="utf-8") as file:
             file.write(html)
 
