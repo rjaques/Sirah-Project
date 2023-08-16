@@ -936,7 +936,7 @@ def generate_witness_list(file_paths):
         li = f"<li><a href='{file_path}'>{label} ({id_})</a></li>\n"
         ul_list.append((label, li))
     # sort the list by the labels and build the ul element
-    ul = "".join([tup[1] for tup in sorted(ul_list)])
+    ul = "".join([tup[1] for tup in sorted(ul_list, key=lambda tup: tup[0].strip("ʿ"))])
     ul = "<ul>\n" + ul + "</ul>\n"
     return ul
 
