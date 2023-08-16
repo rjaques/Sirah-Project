@@ -67,11 +67,9 @@ for folder in sorted(os.listdir(".")):
             file.write(html)
 
 
-
-
-
-
 # copy the current working directory to the release folder:
+if os.path.exists(release_folder):
+    shutil.rmtree(release_folder)
 shutil.copytree(working_dir, release_folder)
 
 # reroute the user to the new release:
