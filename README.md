@@ -146,10 +146,41 @@ This means that the current "work-in-progress" folder will be copied and be give
 
 ### Manual release
 
-You can also decide to create a new release at any point yourself, by a simple butyon click:
+You can also decide to create a new release at any point yourself, by a simple button click:
 
 * go to the Actions tab in this repo
 * click on "manual release" in the left-hand column,
 * click on the "Run workflow" dropdown on the right, and inside the dropdown on the "Run workflow" button.
 
-This will create a copy of the current work-in-progress website; the new website should be available in ca. 2 minutes.
+This will create a copy of the current work-in-progress website, using today's date as the folder name. 
+The script will also add links to the new release in the "Revision and Update Notes" page of each older release,
+and redirect visitors of rjaques.github.io/sira-project to the latest release.
+The updated website should be available in ca. 2 minutes.
+
+NB: on Firefox, the redirection does not work immediately, because the browser caches the old link. 
+One solution is to open the link in a private browsing window. 
+Alternatively, follow these steps ([source](https://bugzilla.mozilla.org/show_bug.cgi?id=923952#ch-9): 
+* Open Web Developer Tools (Ctrl+Shift+I), click there "Network" tab and check the checkbox "Disable Cache" (disabled only in that tab)
+* Load the original URL, e.g. by pasting the URL into the address bar
+* Enable the cache again (optional)
+
+#### Adding version release notes: 
+
+Before doing a manual release, you can add notes to the new release; this is not necessary, but may be useful for yourself and your users. 
+
+Go to the `data/side_menu/Revision and Update Notes.md` file, and under "Release list", copy the first item in the list and paste it on a new line above it. 
+Then replace the date in the file name with today's date. Finally, add your notes, and save the changes.
+
+E.g., if you want to create a new version on 17 August 2023:
+
+```
+## Release list:
+<!-- INSERT NEWER VERSION BELOW THIS -->
+* [v2023-08-17](https://rjaques.github.io/Sirah-Project/v2023-08-16)
+    - Added a new witness: WXXXX
+    - Updated the "about" page
+* [v2023-08-16](https://rjaques.github.io/Sirah-Project/v2023-08-16)
+* [v2023-08-11](https://rjaques.github.io/Sirah-Project/v2023-08-11/)
+* [v2023-08-07](https://rjaques.github.io/Sirah-Project/v2023-08-07/)
+* [v2023-07-24](https://rjaques.github.io/Sirah-Project/v2023-07-24/)
+```
