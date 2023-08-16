@@ -1,6 +1,6 @@
 name: Build website
 on:
-  push
+  [push, workflow_dispatch]
   
 jobs:
   build-html:
