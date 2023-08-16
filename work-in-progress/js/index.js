@@ -7,20 +7,30 @@ function defineWidth(dashboard, pageContent, toc) {
   // adapt the width of the main content of the page 
   // (based on the visibility of both sidebars): 
   if (dashboard.classList.contains("hidden")) {
-    if (toc.classList.contains("hidden")) {
-      console.log("DASHBOARD AND TOC HIDDEN");
-      pageContent.style.width = "85%";
+    if (toc) {
+      if (toc.classList.contains("hidden")) {
+        console.log("DASHBOARD AND TOC HIDDEN");
+        pageContent.style.width = "85%";
+      } else {
+        console.log("DASHBOARD HIDDEN, TOC DISPLAYED");
+        pageContent.style.width = "70%";
+      }
     } else {
-      console.log("DASHBOARD HIDDEN, TOC DISPLAYED");
-      pageContent.style.width = "70%";
+      console.log("DASHBOARD HIDDEN, NO TOC");
+      pageContent.style.width = "90%";
     }
   } else {
-    if (toc.classList.contains("hidden")) {
-      console.log("DASHBOARD DISPLAYED, TOC HIDDEN");
-      document.getElementById("pageContent").style.width = "70%";
+    if (toc) {
+      if (toc.classList.contains("hidden")) {
+        console.log("DASHBOARD DISPLAYED, TOC HIDDEN");
+        document.getElementById("pageContent").style.width = "70%";
+      } else {
+        console.log("DASHBOARD AND TOC DISPLAYED");
+        document.getElementById("pageContent").style.width = "50%";
+      }
     } else {
-      console.log("DASHBOARD AND TOC DISPLAYED");
-      document.getElementById("pageContent").style.width = "50%";
+      console.log("DASHBOARD DISPLAYED, NO TOC");
+      pageContent.style.width = "75%";
     }
   }
 }
