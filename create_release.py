@@ -38,7 +38,9 @@ revision_text = re.sub(r"The current release is.+",
 # add the new release version to the release list (if it has not yet been manually added):
 insert_note = "<!-- INSERT NEWER VERSION BELOW THIS -->"
 if not re.findall(f"{insert_note}\s*\* \[{release_folder}", revision_text):
-    revision_text = re.sub(insert_note, f"{insert_note}\n* [{release_folder}]({release_url})")
+    revision_text = re.sub(insert_note, 
+                           f"{insert_note}\n* [{release_folder}]({release_url})",
+                           revision_text)
 
 # store the current release notes:
 with open(revision_fp, mode="w", encoding="utf-8") as file:
