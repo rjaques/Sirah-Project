@@ -1091,7 +1091,7 @@ def main():
 
         side_menu_folder = os.path.join(root_folder, "data", "side_menu")
         side_menu_bar = generate_menu_bar(side_menu_folder, html_folder)
-        menu_bar += '      <div><a href="index.html">home</a></div>\n'
+        side_menu_bar += '      <div><a href="index.html">home</a></div>\n'
         template_str = re.sub("SIDE_MENU_BAR_HERE", side_menu_bar, template_str)
 
         # step 3: generate the index page and other info pages:
