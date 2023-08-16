@@ -126,14 +126,14 @@ def clean_filename(fn, lowercase=False):
     fn = re.sub(r"\s+", "-", fn)
     # separate combining characters:
     fn = unicodedata.normalize("NFD", fn)
+    # remove number prefix from filename:
+    if re.findall("^\d_", fn):
+        fn = fn[2:]
     # remove anything that is not an ASCII word character or hypen:
     fn = re.sub(r"[^a-zA-Z0-9\-.]+", "", fn)
     # convert to lowercase:
     if lowercase:
         fn = fn.lower()
-    # remove number prefix from filename:
-    if re.findall("^\d_", fn):
-        fn = fn[2:]
     return fn
     
 
@@ -1008,7 +1008,7 @@ def generate_menu_bar(menu_folder, html_folder):
     """Generate html pages from markdown files in the menu_folder 
     and links to those files in the menu bar"""
     menu_bar = ""
-    for fn in os.listdir(menu_folder):
+    for fn in sorted(os.listdir(menu_folder)):
         fp = os.path.join(menu_folder, fn)
         if fn.endswith(("md", "html")) and os.path.isfile(fp):
             html_fn = fn.replace(".md", ".html")
