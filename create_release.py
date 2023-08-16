@@ -25,7 +25,7 @@ release_url = base_url + release_folder
 # add the new release to the release notes: 
 
 # get the current version of the release notes:
-revision_fp = "data/side_menu/revision and Update Notes.md"
+revision_fp = "data/side_menu/Revision and Update Notes.md"
 with open(revision_fp, mode="r", encoding="utf-8") as file:
     revision_text = file.read()
     revision_text = re.sub(r"\r", "", revision_text)
