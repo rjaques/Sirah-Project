@@ -1,14 +1,14 @@
 # Sira project website
 
 This is a prototype of a website for Kevin Jaques' Sira Project. 
-It can be viewed here: [rjaques.github.io/sirah-project/](https://rjaques.github.io/sirah-project/)
+It can be viewed here: [rjaques.github.io/Sirah-Project/](https://rjaques.github.io/Sirah-Project/)
 
 The website is versioned: the index.html file in the root folder of the repository
 will redirect to the latest released version (releases are dated: vYYYY-MM-DD).
 
 External users should only use the released version, which is citable and does not change.
 The latest changes (since the latest release) are visible under 
-[rjaques.github.io/sirah-project/work-in-progress](https://rjaques.github.io/sirah-project/work-in-progress)
+[rjaques.github.io/Sirah-Project/work-in-progress](https://rjaques.github.io/Sirah-Project/work-in-progress)
 
 The goal is that Kevin can keep on working on his witness files and whenever he pushes his changes to GitHub,
 the changes will be reflected in the work-in-progress page. When he's happy with the current state of the website
@@ -28,7 +28,7 @@ For this to work, you should:
 
 1. enable GitHub Actions with the correct permissions:
 
-* Under your repository name (sirah-project), click  Settings. If you cannot see the "Settings" tab, select the  dropdown menu, then click Settings.
+* Under your repository name (Sirah-Project), click  Settings. If you cannot see the "Settings" tab, select the  dropdown menu, then click Settings.
 * In the left sidebar, click  Actions, then click General.
 * scroll down to "Workflow permissions", select "Read and write permissions" and press "save".
 
@@ -37,7 +37,7 @@ For this to work, you should:
 * Under your repository name, click  Settings. If you cannot see the "Settings" tab, select the  dropdown menu, then click Settings.
 * In the left sidebar, click  Pages
 * Under "branch", choose "main", keep the default location as "root/"  and click "save"
-The content of the root folder of your repo is now served under <your_github_name>.github.io/sirah-project
+The content of the root folder of your repo is now served under <your_github_name>.github.io/Sirah-Project
 (and because we have put the index.html file in the root folder, that will be displayed by default when you go to that page)
 
 # Folder structure
@@ -79,7 +79,7 @@ The content of the root folder of your repo is now served under <your_github_nam
   "add file" button, and then "upload files" in the dropdown menu that opens.
   You can now drag and drop the updated/new file. You'll be asked
   to provide a descriptive "commit message" before the file is uploaded.
-* GitHub will now automatically rebuild the website (this will take ca. 3 minutes; you can follow the progress in the Actions tab on the repo's GitHub page) and the changes will be visible on the [work-in-progress page](https://rjaques.github.io/sirah-project/work-in-progress) 
+* GitHub will now automatically rebuild the website (this will take ca. 3 minutes; you can follow the progress in the Actions tab on the repo's GitHub page) and the changes will be visible on the [work-in-progress page](https://rjaques.github.io/Sirah-Project/work-in-progress) 
 
 ### 2. more flexible and stable: using the command line
 
@@ -107,7 +107,7 @@ This is done by uploading a new markdown file  (extension: .md) to the relevant 
 
 The file name will become the name of the link/button in the menu, so choose your filename wisely.
 
-After uploading your file, the website will be rebuilt automatically. Your changes will be displayed in the  [work-in-progress page](https://rjaques.github.io/sirah-project/work-in-progress)  after ca. 3 minutes.
+After uploading your file, the website will be rebuilt automatically. Your changes will be displayed in the  [work-in-progress page](https://rjaques.github.io/Sirah-Project/work-in-progress)  after ca. 3 minutes.
 
 ### Writing markdown
 
