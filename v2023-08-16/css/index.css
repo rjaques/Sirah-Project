@@ -6,9 +6,11 @@ body {
 }
 
 /* Set the font for ltr elements to Times New Roman (because of diacritics display issues with Amiri on Firefox) */
-*[dir="ltr"] {
+/*body[dir="ltr"] {*/
+body:dir(ltr) {
     font-family: "Times New Roman";
-  }
+}
+
 
 h1 { 
     color: #05386b; 
