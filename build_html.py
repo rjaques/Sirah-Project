@@ -127,6 +127,9 @@ def clean_filename(fn, lowercase=False):
     # convert to lowercase:
     if lowercase:
         fn = fn.lower()
+    # remove number prefix from filename:
+    if re.findall("^\d_", fn):
+        fn = fn[2:]
     return fn
     
 
@@ -1009,6 +1012,9 @@ def generate_menu_bar(menu_folder, html_folder):
             html_fn = clean_filename(html_fn, lowercase=True)
             html_fp = os.path.join(html_folder, html_fn)
             label = re.sub("\.html|\.md", "", fn).lower()
+            # remove number prefix from file name:
+            if re.findall("^\d_", label):
+                label = label[2:]
             if fn != "index.md":
                 menu_bar += f'      <div><a href="{html_fn}">{label}</a></div>\n'
     return menu_bar
@@ -1081,6 +1087,7 @@ def main():
 
         side_menu_folder = os.path.join(root_folder, "data", "side_menu")
         side_menu_bar = generate_menu_bar(side_menu_folder, html_folder)
+        menu_bar += '      <div><a href="index.html">home</a></div>\n'
         template_str = re.sub("SIDE_MENU_BAR_HERE", side_menu_bar, template_str)
 
         # step 3: generate the index page and other info pages:
