@@ -50,6 +50,8 @@ with open(revision_fp, mode="w", encoding="utf-8") as file:
 for folder in os.listdir("."):
     if re.findall("^v\d+", folder):
         earlier_revision_fp = os.path.join(folder, "revision-and-update-notes.html")
+        if not os.path.exists(earlier_revision_fp):
+             continue
         with open(earlier_revision_fp, mode="r", encoding="utf-8") as file:
              html = file.read()
              html = re.sub(f'{insert_note}\s*<ul>',
