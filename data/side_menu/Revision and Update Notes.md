@@ -1,1 +1,16 @@
-(to create content for this page, go to data/side_menu/Revision and Update Notes.md)
+# Revision and update notes
+
+This website is updated and released periodically. 
+
+The current release is **[v2023-08-11](https://rjaques.github.io/Sirah-Project/v2023-08-11/)**
+
+Please always cite the website including its release number 
+([https://rjaques.github.io/Sirah-Project](https://rjaques.github.io/Sirah-Project]) 
+will always redirect to the latest release).
+Released versions of the website are stable and will remain available.
+
+## Release list:
+<!-- INSERT NEWER VERSION BELOW THIS -->
+* [v2023-08-11](https://rjaques.github.io/Sirah-Project/v2023-08-11/)
+* [v2023-08-07](https://rjaques.github.io/Sirah-Project/v2023-08-07/)
+* [v2023-07-24](https://rjaques.github.io/Sirah-Project/v2023-07-24/)
