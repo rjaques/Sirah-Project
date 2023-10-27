@@ -383,9 +383,9 @@ def format_meta(section):
     if arabic_title:
         s += "<h1>" + arabic_title[0].strip() + "</h1>\n"
 
-    arabic_author = re.findall(r"#META# المؤلف: *(.+)", section)
-    if arabic_author:
-        s += "<h2>" + arabic_author[0].strip() + "</h2>\n"
+    #arabic_author = re.findall(r"#META# المؤلف: *(.+)", section)
+    #if arabic_author:
+    #    s += "<h2>" + arabic_author[0].strip() + "</h2>\n"
     
     s += "<br/><br/>"
     return s
