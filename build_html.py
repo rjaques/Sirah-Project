@@ -74,7 +74,7 @@ for index, row in selected_columns.iterrows():
 # create a dictionary that contains a verbose citation for each citation code,
 # and store all citations in a markdown file:
 bibl_fp = os.path.join(root_folder, "data", "side_menu", "Bibliography.md")
-splitter = "(\n\|[\|\-:]+\| *\n)"  # |:-----|-----|
+splitter = r"(\n\|[\|\-:]+\| *\n)"  # |:-----|-----|
 with open(bibl_fp, mode="r", encoding="utf-8") as f:
     bibliography_md = f.read()
     # remove the current content of the table:
@@ -127,7 +127,7 @@ def clean_filename(fn, lowercase=False):
     # separate combining characters:
     fn = unicodedata.normalize("NFD", fn)
     # remove number prefix from filename:
-    if re.findall("^\d_", fn):
+    if re.findall(r"^\d_", fn):
         fn = fn[2:]
     # remove anything that is not an ASCII word character or hypen:
     fn = re.sub(r"[^a-zA-Z0-9\-.]+", "", fn)
@@ -142,17 +142,17 @@ def clean_text(text, fn):
     The function will flag important inconsistencies in the text files that should be corrected in the data."""
     
     # remove @EC... tags (e.g., @EC_12/30/22@):
-    text = re.sub(" *@EC_[\d/]+@", "", text)
+    text = re.sub(r" *@EC_[\d/]+@", "", text)
     # remove Kevin's personal tags:
-    #text = re.sub("SEE_\w+(?: *to +\w+)?", "", text)
+    #text = re.sub(r"SEE_\w+(?: *to +\w+)?", "", text)
     text = format_SEE(text)
 
     # remove carriage return (in Windows, a new line starts with both carriage return \r and newline \n character)
     text = re.sub(r"\r", "", text)
     # Fix lines that start with a space:
-    text = re.sub("\n +", "\n", text)
+    text = re.sub(r"\n +", "\n", text)
     # remove left-to-right mark:
-    text = re.sub("\u200e", "", text)
+    text = re.sub(r"\u200e", "", text)
     # remove backslashes:
     backslashes = re.findall(r"\\.{,100}", text)
     if backslashes:
@@ -163,7 +163,7 @@ def clean_text(text, fn):
         text = re.sub(r"\\", "", text)
 
     # fix paragraphs that start with an end tag instead of a beginning tag:
-    paragraphs_that_start_with_end_tag = re.findall("# @\w+_END_\w+", text)
+    paragraphs_that_start_with_end_tag = re.findall(r"# @\w+_END_\w+", text)
     if paragraphs_that_start_with_end_tag:
         print(fn, ": the following paragraphs start with an _END_ tag instead of a _BEG_ tag:")
         for p in paragraphs_that_start_with_end_tag:
@@ -172,7 +172,7 @@ def clean_text(text, fn):
         text = re.sub(r"(\n\n# @\w+)_END_", r"\1_BEG_", text)
 
     # fix paragraphs that end with a _BEG_ tag instead of an _END_ tag:
-    paragraphs_that_end_with_start_tag = re.findall("(@\w+_BEG_\w+) *\n+Page", text)
+    paragraphs_that_end_with_start_tag = re.findall(r"(@\w+_BEG_\w+) *\n+Page", text)
     if paragraphs_that_end_with_start_tag:
         print(fn, ": the following paragraphs end with a _BEG_ tag instead of an _END_ tag:")
         for p in paragraphs_that_end_with_start_tag:
@@ -181,7 +181,7 @@ def clean_text(text, fn):
         text = re.sub(r"(@\w+)_BEG_(\w+ *\n+Page)", r"\1_END_\2", text)
 
     # fix paragraphs that end with a "naked" tag instead of an _END_ tag:
-    paragraphs_that_end_with_naked_tag = re.findall("(@\w{4,}?V\d+P\d+[A-Z]?) *\n+Page", text)
+    paragraphs_that_end_with_naked_tag = re.findall(r"(@\w{4,}?V\d+P\d+[A-Z]?) *\n+Page", text)
     if paragraphs_that_end_with_naked_tag:
         print(fn, ": the following paragraphs end with a 'naked' tag instead of an _END_ tag:")
         for p in paragraphs_that_end_with_naked_tag:
@@ -190,7 +190,7 @@ def clean_text(text, fn):
         text = re.sub(r"(@\w{4,}?V\d+P\d+[A-Z]?) *\n+Page", r"\1_END_XXXX\nPage", text)
 
     # fix paragraphs that do not start with double new line:
-    paragraphs_without_double_new_line = re.findall("[^\n]\n# (@\w+_BEG_\+)", text)
+    paragraphs_without_double_new_line = re.findall(r"[^\n]\n# (@\w+_BEG_\+)", text)
     if paragraphs_without_double_new_line:
         print(fn, ": the following paragraphs do not start with a double new line:")
         for p in paragraphs_without_double_new_line:
@@ -199,7 +199,7 @@ def clean_text(text, fn):
         text = re.sub(r"[\n ]+(# @\w+_BEG_)", r"\n\n\1", text)
 
     # fix paragraphs that do not start with hash tag:
-    paragraphs_that_dont_start_with_hash = re.findall(".*(?<!# )(@\w+_BEG_\w+)", text)
+    paragraphs_that_dont_start_with_hash = re.findall(r".*(?<!# )(@\w+_BEG_\w+)", text)
     if paragraphs_that_dont_start_with_hash:
         print(fn, ": the following paragraphs do not start with a hashtag:")
         for p in paragraphs_that_dont_start_with_hash:
@@ -215,10 +215,10 @@ def clean_text(text, fn):
     # - fix type "NOTE" instead of "COMMENT"
     # - fix lowercase tag ("@Comment")
 
-    space_in_tag = re.findall("# @ +(?:COMM?ENT|NOTE).{,50}", text)
-    typo_in_tag = re.findall("# @ *(?:CO(?!MMENT)|NOTE).{,50}", text)
-    multiple_lines = re.findall("\n\n# @ *(?:CO(?!MMENT)|NOTE).{,50}", text)
-    lower_case = re.findall("# @ *(?:[cC]omm?ent).{,50}", text)
+    space_in_tag = re.findall(r"# @ +(?:COMM?ENT|NOTE).{,50}", text)
+    typo_in_tag = re.findall(r"# @ *(?:CO(?!MMENT)|NOTE).{,50}", text)
+    multiple_lines = re.findall(r"\n\n# @ *(?:CO(?!MMENT)|NOTE).{,50}", text)
+    lower_case = re.findall(r"# @ *(?:[cC]omm?ent).{,50}", text)
 
     inconsistent_comment_tags = space_in_tag + typo_in_tag + multiple_lines + lower_case
     if inconsistent_comment_tags:
@@ -243,22 +243,22 @@ def clean_text(text, fn):
         text = re.sub(r"\n+# @ *(?:COMM?ENT|NOTE)", "\n# @COMMENT", text, flags=re.IGNORECASE)
 
     # Fix paragraphs where the page number is after the comments:
-    page_number_after_comments = re.findall("(\w+_END_.+[\n]+)# @COMMENT.+[\n]+PageV\d+P\d+[A-Z]*", text)
+    page_number_after_comments = re.findall(r"(\w+_END_.+[\n]+)# @COMMENT.+[\n]+PageV\d+P\d+[A-Z]*", text)
     if page_number_after_comments:
         print(fn, ": in these paragraphs, the page numbers are erroneously located after the comments:")
         for p in page_number_after_comments:
             print("-", p.strip())
         # fix the issue temporarily:
-        text = re.sub("(_END_.+[\n]+)(# @COMMENT.+[\n]+)(PageV\d+P\d+[A-Z]*)", r"\1\3\2", text)
+        text = re.sub(r"(_END_.+[\n]+)(# @COMMENT.+[\n]+)(PageV\d+P\d+[A-Z]*)", r"\1\3\2", text)
 
     # Fix missing page numbers:
-    missing_page_numbers = re.findall("(\w+_END_.+[\n ]+)(?=[^P\n ])", text)
+    missing_page_numbers = re.findall(r"(\w+_END_.+[\n ]+)(?=[^P\n ])", text)
     if missing_page_numbers:
         print(fn, ": the current sections do not have a page number following the text:")
         for p in missing_page_numbers:
             print("-", p.strip())
         # fix the issue temporarily:
-        text = re.sub("(\w+?)(V\d+P\d+)([A-Z]*_END_\w+)[\n ]+(?=[^P\n ])", r"\1\2\3\nPage\2\n", text)
+        text = re.sub(r"(\w+?)(V\d+P\d+)([A-Z]*_END_\w+)[\n ]+(?=[^P\n ])", r"\1\2\3\nPage\2\n", text)
 
     return text
 
@@ -271,16 +271,16 @@ def build_toc(toc_list, toc_template, indentation):
     # close last list item:
     toc_str += "</li>\n"
     # close open list levels:
-    prev_spaces = " " * len(re.findall("( +)<li>", toc_list[-1])[-1])
+    prev_spaces = " " * len(re.findall(r"( +)<li>", toc_list[-1])[-1])
     while prev_spaces:
         ul_spaces = " " * (len(prev_spaces) - int(indentation/2))
         li_spaces = " " * (len(prev_spaces) - indentation)
         toc_str += f'{ul_spaces}</ul>\n{li_spaces}</li>\n'
         prev_spaces = li_spaces
     # add the "toc-list" ID to the first ul tag:
-    toc_str = re.sub("<ul>", "<ul id='toc-list'>", toc_str, count=1)
+    toc_str = re.sub(r"<ul>", "<ul id='toc-list'>", toc_str, count=1)
     # wrap the list in the table of contents template:
-    toc_str = re.sub("TABLE_OF_CONTENTS_HERE", toc_str, toc_template)
+    toc_str = re.sub(r"TABLE_OF_CONTENTS_HERE", toc_str, toc_template)
     return toc_str
 
 
@@ -321,7 +321,7 @@ def convert_to_html(text_file_path, html_folder, template_str, toc_template, ind
     # split the text on section headers and convert each part to html:
     body = ""  # this will contain the html body
     meta_header = True
-    for section in re.split("(### \|+ .+[\r\n]+)", text):
+    for section in re.split(r"(### \|+ .+[\r\n]+)", text):
         # NB: the parentheses make sure the section headers are not discarded:
         #   re.split("(b)", "abc")  > ["a", "b", "c"]
         #   re.split("b", "abc")    > ["a", "c"]
@@ -331,7 +331,7 @@ def convert_to_html(text_file_path, html_folder, template_str, toc_template, ind
             body += format_meta(section)
             meta_header = False
             # remove all the metadata and extract any paragraphs that precede the first section header:
-            section = re.sub("#META#.+|#OpenITI-RKJ#", "", section)
+            section = re.sub(r"#META#.+|#OpenITI-RKJ#", "", section)
             body += format_section_content(section)
         elif section.startswith("### |"): # this section is a section header
             #print("-------> section_header!")
@@ -346,11 +346,11 @@ def convert_to_html(text_file_path, html_folder, template_str, toc_template, ind
     #print(len(body), "characters in body")
     #html_str = re.sub("<body>\s*</body>", f"<body>%s</body>" % body, html_str)
     #html_str = re.sub('<div id="pageContent">\s*</div>', f'<div id="pageContent">%s</div>' % body, html_str)
-    html_str = re.sub("PAGE_CONTENT_HERE", body, template_str)
+    html_str = re.sub(r"PAGE_CONTENT_HERE", body, template_str)
 
     # build the table of contents and add it to the page:
     toc_html = build_toc(toc_list, toc_template, indentation)
-    html_str = re.sub("TABLE_OF_CONTENTS_HERE", toc_html, html_str)
+    html_str = re.sub(r"TABLE_OF_CONTENTS_HERE", toc_html, html_str)
     
     # save the witness html:
     html_fp = create_html_path(text_file_name, html_folder)
@@ -369,15 +369,15 @@ def format_meta(section):
     """
     s = ""
 
-    english_title = re.findall("Transliterated Name: *(.+)", section)
+    english_title = re.findall(r"Transliterated Name: *(.+)", section)
     if english_title:
         s += "<h2 dir='ltr'>The witness version of " + english_title[0].strip() + "</h2>\n"
 
-    arabic_title = re.findall("#META# الكتاب: *(.+)", section)
+    arabic_title = re.findall(r"#META# الكتاب: *(.+)", section)
     if arabic_title:
         s += "<h1>" + arabic_title[0].strip() + "</h1>\n"
 
-    arabic_author = re.findall("#META# المؤلف: *(.+)", section)
+    arabic_author = re.findall(r"#META# المؤلف: *(.+)", section)
     if arabic_author:
         s += "<h2>" + arabic_author[0].strip() + "</h2>\n"
     
@@ -474,15 +474,15 @@ def format_section_title(section_title, toc_list, indentation=4):
     level = section_title.count("|")
     h_tag = f"h{level+2}"
     # remove the mARkdown tag from the section title line:
-    bare_section_title = re.sub("### \|+ *", "", section_title.strip())
+    bare_section_title = re.sub(r"### \|+ *", "", section_title.strip())
     # create slug from title (to be used as id/anchor):
-    title_without_tags = re.sub("[^ ء-ي]+", " ", bare_section_title).strip()
-    slug = re.sub("\s+", "-", title_without_tags)
+    title_without_tags = re.sub(r"[^ ء-ي]+", " ", bare_section_title).strip()
+    slug = re.sub(r"\s+", "-", title_without_tags)
     # shorten long slugs: 
     if slug.count("-") > 5:
         slug = "-".join(slug.split("-")[:5])
     # make non-unique slugs unique by adding a serial number:
-    slugs = re.findall('href="#([^"]+)', "".join(toc_list))
+    slugs = re.findall(r'href="#([^"]+)', "".join(toc_list))
     i=0
     while slug in slugs:
         i+=1
@@ -503,7 +503,7 @@ def add_to_toc(title_without_tags, slug, toc_list, level, indentation):
     spaces = int(level * indentation) * " "
     # get the previous title's indentation spaces:
     try:
-        prev_spaces = " " * len(re.findall("( +)<li>", toc_list[-1])[-1])
+        prev_spaces = " " * len(re.findall(r"( +)<li>", toc_list[-1])[-1])
     except:
         prev_spaces = ""
     # add the title to the table of contents, based on its hierarchical level
@@ -610,7 +610,7 @@ def format_section_content(section):
     if section.startswith("# @COMMENT"):
         #print("SECTION STARTS WITH # @COMMENT:")
         #print(section[:100])
-        first_comment = re.findall(".+?\n\n+", section)[0]
+        first_comment = re.findall(r".+?\n\n+", section)[0]
         s += format_comment(first_comment.strip())
         section = section[len(first_comment)-1].strip()
 
@@ -638,7 +638,7 @@ def format_section_content(section):
             print(paragraph)
             print("--------------------")
             try:
-                witness_text, comment = re.split("\w+_END_\w*", paragraph)
+                witness_text, comment = re.split(r"\w+_END_\w*", paragraph)
                 end_page = "PageV00P000"
             except Exception as e:
                 print(e)
@@ -693,7 +693,7 @@ def format_section_content(section):
 def format_page_number(page_no):
     """Convert a mARkdown page number to HTML"""
     # TO DO
-    vol, page = re.findall("PageV0*([1-9]\d*)P0*([1-9]\d*)", page_no)[0]
+    vol, page = re.findall(r"PageV0*([1-9]\d*)P0*([1-9]\d*)", page_no)[0]
     page_no = f"(Page {page} of vol. {vol})"
     return page_no
 
@@ -719,13 +719,13 @@ def format_witness_text(main_id, witness_text):
         witness_text (str): the content of the current witness report
     """
     # remove witness IDs from witness_text:
-    t = re.sub(id_regex+"\w*", "", witness_text)
+    t = re.sub(id_regex+r"\w*", "", witness_text)
     # remove hashtags:
-    t = re.sub("# *", "", t)
+    t = re.sub(r"# *", "", t)
     # remove the page number attached to the end of the text:
     t = re.sub(r"PageV\d+P\d+[A-Z]*\Z", "", t)
     # format page numbers inside text:
-    t = re.sub("PageV0*([1-9]\d*)P0*([1-9]\d*)[A-Z]*", format_page_number_sub, t)
+    t = re.sub(r"PageV0*([1-9]\d*)P0*([1-9]\d*)[A-Z]*", format_page_number_sub, t)
     
     # TO DO: add links to persons mentioned in the text (currently hiding them)
     t = re.sub(r"(@TR\w+@)", r'<a class="hidden" href="#">\1</a>', t)
@@ -768,15 +768,15 @@ def format_SEE(s):
             print("REFERENCE NOT FOUND IN BIBLIOGRAPHY:", abb)
             expanded = "[REFERENCE NOT FOUND IN BIBLIOGRAPHY]"
         # remove any html tags inside the expanded reference:
-        expanded = re.sub("<[^>]+?>", "", expanded)
+        expanded = re.sub(r"<[^>]+?>", "", expanded)
         return f'<span class="see_reference" title="See {expanded}, vol. {vol} p. {page}{to_page}">*</span>'
     
-    s = re.sub("SEE_([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)((?: *to +\w+)?)", expand_reference, s)
+    s = re.sub(r"SEE_([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)((?: *to +\w+)?)", expand_reference, s)
     if "SEE_" in s:
         print("INCORRECTLY FORMATTED 'SEE_' TAGS:")
-        for tag in re.findall("SEE_\w+(?: *to +\w+)?", s):
+        for tag in re.findall(r"SEE_\w+(?: *to +\w+)?", s):
             print("* ", tag)
-        s = re.sub("SEE_(\w+(?: *to +\w+)?)", r'<span class="see_reference" title="See \1">*</span>', s)
+        s = re.sub(r"SEE_(\w+(?: *to +\w+)?)", r'<span class="see_reference" title="See \1">*</span>', s)
     return s
 
 
@@ -834,13 +834,13 @@ def format_comment(comment):
     comment = re.sub(r"\bW[A-Z]{4}\b", expand_witness, comment)
 
     # replace reference IDs with the full reference:
-    comment = re.sub("([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)", expand_reference, comment)
+    comment = re.sub(r"([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)", expand_reference, comment)
 
     # remove all tags inside the comment:
-    comment_without_tags = re.sub(" *<[^>]+?> *", " ", comment)
+    comment_without_tags = re.sub(r" *<[^>]+?> *", " ", comment)
 
     # split comment into paragraphs:
-    split_comment = re.split(" *\n+ *", comment.strip())
+    split_comment = re.split(r" *\n+ *", comment.strip())
     comment = "\n    ".join([f'<p dir="auto">{p}</p>' for p in split_comment if p.split()])
     
     return f"""\
@@ -873,15 +873,15 @@ def format_reference(id_, text):
         book_ref = id_[:4]
         print(f"{book_ref} (from {id_}) not found in bibliography dict")
     try:
-        vol_no, first_page = re.findall("V0*([1-9]\d*)P0*([1-9]\d*)", id_)[-1]
+        vol_no, first_page = re.findall(r"V0*([1-9]\d*)P0*([1-9]\d*)", id_)[-1]
     except:
         vol_no = "?"
         first_page = "?"
         print("no vol and page number found in this ID:")
         print(id_)
-    #last_page = re.findall("P(\d+[A-Z]*)", id_)[-1]
+    #last_page = re.findall(r"P(\d+[A-Z]*)", id_)[-1]
     try:
-        last_page = re.findall("P0*([1-9]\d*)", text)[-1]
+        last_page = re.findall(r"P0*([1-9]\d*)", text)[-1]
     except:
         last_page = "?"
         print("No last page found in the text:")
@@ -894,7 +894,7 @@ def format_reference(id_, text):
         reference = f"{book_ref}, vol. {vol_no} p. {last_page}"
     
     # remove any html tags inside the reference:
-    reference_without_tags = re.sub(" *<[^>]+?> *", " ", reference)
+    reference_without_tags = re.sub(r" *<[^>]+?> *", " ", reference)
 
     return f"""
         <div class="reference-container">
@@ -975,7 +975,7 @@ def generate_info_page(template_str, md_fp, html_fp, direction="ltr"):
     
     # change the main text direction of the page to left-to-right if the text is in English:
     if direction == "ltr":
-        template_str = re.sub("""dir=['"]rtl['"]""", 'dir="ltr"', template_str)
+        template_str = re.sub(r"""dir=['"]rtl['"]""", 'dir="ltr"', template_str)
 
     # check if a specific css file exists for this file (a css file with the same filename)
     # and insert a link to that css file in the html header if it exists:
@@ -983,7 +983,7 @@ def generate_info_page(template_str, md_fp, html_fp, direction="ltr"):
     css_fn = html_fn[:-5] + ".css"
     css_fp = os.path.join(html_folder, "css", css_fn)
     if os.path.exists(css_fp):
-        placeholder = "<!--INSERT_PAGE_SPECIFIC_CSS_HERE-->"
+        placeholder = r"<!--INSERT_PAGE_SPECIFIC_CSS_HERE-->"
         style_sheet_link = f'<link rel="stylesheet" type="text/css" href="./css/{css_fn}">'
         template_str = re.sub(placeholder, style_sheet_link, template_str)
 
@@ -995,10 +995,10 @@ def generate_info_page(template_str, md_fp, html_fp, direction="ltr"):
             html = file.read()
     
     # paste it into the template:
-    html_content = re.sub("PAGE_CONTENT_HERE", html, template_str)
+    html_content = re.sub(r"PAGE_CONTENT_HERE", html, template_str)
 
     # remove the TOC placeholder
-    html_content = re.sub("TABLE_OF_CONTENTS_HERE", "", html_content)
+    html_content = re.sub(r"TABLE_OF_CONTENTS_HERE", "", html_content)
 
     # save it into the html folder:
     with open(html_fp, "w", encoding="utf-8") as html_file:
@@ -1015,9 +1015,9 @@ def generate_menu_bar(menu_folder, html_folder):
             #html_fn = html_fn.replace(" ", "-").lower()
             html_fn = clean_filename(html_fn, lowercase=True)
             html_fp = os.path.join(html_folder, html_fn)
-            label = re.sub("\.html|\.md", "", fn).lower()
+            label = re.sub(r"\.html|\.md", "", fn).lower()
             # remove number prefix from file name:
-            if re.findall("^\d_", label):
+            if re.findall(r"^\d_", label):
                 label = label[2:]
             if fn != "index.md":
                 menu_bar += f'      <div><a href="{html_fn}">{label}</a></div>\n'
@@ -1080,19 +1080,19 @@ def main():
         file_list = generate_file_list(data_folder, html_folder)
         # add the links to the witness pages to the sidebar in the html template:
         witness_list = generate_witness_list(file_list)
-        template_str = re.sub("WITNESS_LIST_HERE", witness_list, template_str)
+        template_str = re.sub(r"WITNESS_LIST_HERE", witness_list, template_str)
 
         # step 2: generate the menu bars based on the files in the "data/top_menu" and "data/side_menu" folders
         # and add them to the template:
         
         top_menu_folder = os.path.join(root_folder, "data", "top_menu")
         top_menu_bar = generate_menu_bar(top_menu_folder, html_folder)
-        template_str = re.sub("TOP_MENU_BAR_HERE", top_menu_bar, template_str)
+        template_str = re.sub(r"TOP_MENU_BAR_HERE", top_menu_bar, template_str)
 
         side_menu_folder = os.path.join(root_folder, "data", "side_menu")
         side_menu_bar = generate_menu_bar(side_menu_folder, html_folder)
         side_menu_bar += '      <div><a href="index.html">home</a></div>\n'
-        template_str = re.sub("SIDE_MENU_BAR_HERE", side_menu_bar, template_str)
+        template_str = re.sub(r"SIDE_MENU_BAR_HERE", side_menu_bar, template_str)
 
         # step 3: generate the index page and other info pages:
         
