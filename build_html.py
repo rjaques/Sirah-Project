@@ -1094,10 +1094,12 @@ def main():
         side_menu_bar += '      <div><a href="index.html">home</a></div>\n'
         template_str = re.sub(r"SIDE_MENU_BAR_HERE", side_menu_bar, template_str)
 
+        landing_page_folder = os.path.join(root_folder, "data", "landing_page")
+
         # step 3: generate the index page and other info pages:
         
         all_info_fps = []
-        for folder in [top_menu_folder, side_menu_folder]:
+        for folder in [top_menu_folder, side_menu_folder, landing_page_folder]:
             for fn in os.listdir(folder):
                 fp = os.path.join(folder, fn)
                 all_info_fps.append((fp, fn))
