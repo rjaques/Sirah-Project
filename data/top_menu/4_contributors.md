@@ -12,5 +12,3 @@ The project originated in conversations to Gordon Newby at Emory University in 1
 
 ### Summer 2023 Indiana University Computer Science Interns Siddiq Khan, Shreyasi Deshmukh, and Anirudh Sharma worked on the development of the reader thanks to a grant from the Office of the Vice President for Research at Indiana University. 
 
-
-![Anonymous](../images/anonymous.webp)
