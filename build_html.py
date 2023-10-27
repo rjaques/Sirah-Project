@@ -95,7 +95,8 @@ for index, row in df.iterrows():
     try:
         citation = re.sub(title, f"*{title}*", citation)
     except Exception as e:
-        print(e)
+        print("Error formatting citation for bibliography_dict:", e)
+        print(row)
         print("title:", title)
     # format the OpenITI uri/url for the markdown file:
     url = row["URI"]
