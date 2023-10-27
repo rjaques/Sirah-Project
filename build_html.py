@@ -755,7 +755,7 @@ def format_SEE(s):
         """Expand a reference abbreviation (e.g., "HSNXV01P233B") into a full reference.
         
         Args:
-            m (re.matchobj): matching object for the regex "([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)"
+            m (re.matchobj): matching object for the regex r"([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)"
         """
         ref = m.group(0)
         abb = m.group(1)
@@ -793,7 +793,7 @@ def format_comment(comment):
         """Expand a reference abbreviation (e.g., "HSNXV01P233B") into a full reference.
         
         Args:
-            m (re.matchobj): matching object for the regex "([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)"
+            m (re.matchobj): matching object for the regex r"([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)"
         """
         ref = m.group(0)
         abb = m.group(1)
