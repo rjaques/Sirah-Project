@@ -886,7 +886,6 @@ def format_reference(id_, text):
         last_page = "?"
         print("No last page found in the text:")
         print(text)
-        input()
         return ""
     if last_page != first_page:
         reference = f"{book_ref}, vol. {vol_no} p. {first_page}-{last_page}"
