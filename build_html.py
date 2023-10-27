@@ -63,6 +63,7 @@ comm_regex = r"# @COMMENT:"
 # Create a dictionary that contains verbose definition of each witness code:
 root_folder = os.getcwd()
 df = pd.read_excel(os.path.join(root_folder, "data", "meta", "Witness_list_sheet.xlsx"))
+df = df.fillna('') # replace NaN (not a number) values with empty string
 selected_columns = df[['Arabic name', 'Witness ']]
 
 witness_dict = {}
@@ -81,6 +82,7 @@ with open(bibl_fp, mode="r", encoding="utf-8") as f:
     spl = re.split(splitter,bibliography_md)
     bibliography_md = "".join(spl[:2])  # page title + table header
 df = pd.read_excel(os.path.join(root_folder, "data", "meta", "Kevin Bibliography.xlsx"))
+df = df.fillna('') # replace NaN (not a number) values with empty string
 df.sort_values(by="ID", ascending=True, inplace=True)
 df.reset_index(drop=True, inplace=True) # make sure df.iterrows sorts the rows by ID
 bibliography_dict = {}
@@ -95,9 +97,12 @@ for index, row in df.iterrows():
     try:
         citation = re.sub(title, f"*{title}*", citation)
     except Exception as e:
-        print("Error formatting citation for bibliography_dict:", e)
+        print("Error formatting citation for bibliography_dict...")
+        print("Error message:", e)
+        print("Offending row in the bibliography file:")
         print(row)
-        print("title:", title)
+        print("----------")
+        print("As a result, the title will not be italicized")
     # format the OpenITI uri/url for the markdown file:
     url = row["URI"]
     try:
