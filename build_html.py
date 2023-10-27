@@ -780,8 +780,7 @@ def format_SEE(s):
     s = re.sub(r"SEE_([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)((?: *to +\w+)?)", expand_reference, s)
     if "SEE_" in s:
         print("INCORRECTLY FORMATTED 'SEE_' TAGS:")
-        print(s)
-        for tag in re.findall(r"SEE_\w+(?: *to +\w+)?", s):
+        for tag in re.findall(r"SEE_\w*(?: *to +\w+)?", s):
             print("* ", tag)
         s = re.sub(r"SEE_(\w+(?: *to +\w+)?)", r'<span class="see_reference" title="See \1">*</span>', s)
     return s
