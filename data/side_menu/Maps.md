@@ -1,1 +1,1 @@
-(to create content for this page, go to data/side_menu/Maps.md)
+[The Projected Travels of Ibn Isḥāq](images/map.jpeg)
