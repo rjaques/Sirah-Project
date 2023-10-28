@@ -12,17 +12,19 @@ The latest changes (since the latest release) are visible under
 
 The goal is that Kevin can keep on working on his witness files and whenever he pushes his changes to GitHub,
 the changes will be reflected in the work-in-progress page. When he's happy with the current state of the website
-(or, every 6 months), he can create a new dated release. 
+(or, every three months), he can create a new dated release. 
 
 The GitHub Actions script that updates the website whenever a change is pushed to GitHub
 also performs some consistency tests on the data. You can see the output reports ("logs") of the GitHub Actions 
-script under the "Actions" tab in the github repo. In the left-hand column, click "Build website" to see
+script under the [Actions tab](https://github.com/rjaques/Sirah-Project/actions) in the github repo. In the left-hand column, click "Build website" to see
 a report for all website updates. Click on the label of the latest run of the "Build website" workflow,
 then click "build-html" and then on "rebuild website". The log lists all the inconsistencies the script found
 in the witness files; you can fix these manually in the witness files. 
 
 
 # Setup
+
+(this should be done only once)
 
 For this to work, you should:
 
@@ -47,12 +49,15 @@ The content of the root folder of your repo is now served under <your_github_nam
 |     |- workflows/
 |           |- build_website.yml: script that runs on github server anytime something is changed to the repo;
 |                                 it uses the build_html.py script (in the root folder) to rebuild the website.
+|           |- automated_release.yml: automatically creates a release every 3 months
+|           |- manual_release.yml: creates a new release at the click of a button
 |- data/ : contains the data from which the website is built
 |     |- witness_files/ : contains the witness text files
 |     |- top_menu/ : contains markdown files for each section in the horizontal menu on the top of the website. 
 |     |              When you create a new markdown file here, a new section will be added to the menu bar. 
 |     |- side_menu/ : contains markdown files for each section in the side menu on the website. 
-|     |               When you create a new markdown file here, a new section will be added to the side menu. 
+|     |               When you create a new markdown file here, a new section will be added to the side menu.
+|     |- landing_page/ contains the markdown file for the landing page (home): index.md
 |     |- meta/ : contains the Excel files with the metadata for the witness codes and bibliography
 |- work-in-progress/ : contains the generated witness html pages for the latest data
 |     |- css/ : contains the css files that define the styling of the website
@@ -73,13 +78,13 @@ The content of the root folder of your repo is now served under <your_github_nam
 
 ### 1. very basic: using GitHub online only
 
-* download the file you want to edit to your computer. All relevant files are in the `data/` folder (`data/witness_files/`, `data/top_menu/`, `data/side_menu/`). To download a witness file, click its name in the list of files, then click the download button to the right above the contents of the file in the `data/witness_files/` folder (for very large files, no download button is shown; click the 'raw' button instead and then save using ctrl+s).
+* download the file you want to edit to your computer. All relevant files are in the `data/` folder (`data/witness_files/`, `data/top_menu/`, `data/side_menu/`, `data/landing_page/`). To download a witness file, click its name in the list of files, then click the download button to the right above the contents of the file in the `data/witness_files/` folder (for very large files, no download button is shown; click the 'raw' button instead and then save using ctrl+s).
 * Edit your file in EditPad Pro on your computer
 * Once you're finished (or want to call it a day), go back to the same folder on GitHub (e.g., data/witness_files), click the
   "add file" button, and then "upload files" in the dropdown menu that opens.
   You can now drag and drop the updated/new file. You'll be asked
   to provide a descriptive "commit message" before the file is uploaded.
-* GitHub will now automatically rebuild the website (this will take ca. 3 minutes; you can follow the progress in the Actions tab on the repo's GitHub page) and the changes will be visible on the [work-in-progress page](https://rjaques.github.io/Sirah-Project/work-in-progress) 
+* GitHub will now automatically rebuild the website (this will take ca. 3 minutes; you can follow the progress in the [Actions tab](https://github.com/rjaques/Sirah-Project/actions) on the repo's GitHub page) and the changes will be visible on the [work-in-progress page](https://rjaques.github.io/Sirah-Project/work-in-progress) 
 
 ### 2. more flexible and stable: using the command line
 
@@ -107,7 +112,19 @@ This is done by uploading a new markdown file  (extension: .md) to the relevant 
 
 The file name will become the name of the link/button in the menu, so choose your filename wisely.
 
-After uploading your file, the website will be rebuilt automatically. Your changes will be displayed in the  [work-in-progress page](https://rjaques.github.io/Sirah-Project/work-in-progress)  after ca. 3 minutes.
+The order of the links/buttons in the top menu is determined by a numerical prefix to the file name: 
+
+```
+1_Project overview.md
+2_Overview of the sīrah tradition.md
+...
+```
+
+If you want to change the order, change these prefixes.
+
+After uploading your file, the website will be rebuilt automatically. 
+Your changes will be displayed in the  [work-in-progress page](https://rjaques.github.io/Sirah-Project/work-in-progress)  after ca. 3 minutes. 
+You can follow the progress in the [Actions tab](https://github.com/rjaques/Sirah-Project/actions) on the repo's GitHub page.
 
 ### Writing markdown
 
@@ -115,7 +132,7 @@ Formatting text in markdown files is done using a small amount of tags. For a sh
 
 The most relevant tags for you are:
 
-* headers: use hashtags to define headers:
+* headers: use hashtags to define headers (note the space after the last hashtag):
     - `# first level header`
     - `## second level`
     - ...
@@ -139,9 +156,10 @@ The advantage of this system is double:
 
 ### Automatic quarterly release
 
-The website is currently set up in a way that four times per year, a release will automatically be created. 
+The website is currently set up in a way that four times per year, a release will automatically be created
+(this is handled by the .github/workflows/automated_release.yml script).
 
-This means that the current "work-in-progress" folder will be copied and be given a new name, based on the date (e.g., v2023-08-15). Visitors to your website (rjaques.github.io/sira-project) will automatically be forwarded to the latest release (e.g., rjaques.github.io/sira-project/v2023-08-15).
+This means that the current "work-in-progress" folder will be copied and be given a new name, based on the date (e.g., v2023-08-15). Visitors to your website (rjaques.github.io/sirah-project) will automatically be forwarded to the latest release (e.g., rjaques.github.io/sirah-project/v2023-08-15).
 
 
 ### Manual release
@@ -153,6 +171,7 @@ You can also decide to create a new release at any point yourself, by a simple b
 * click on the "Run workflow" dropdown on the right, and inside the dropdown on the "Run workflow" button.
 
 This will create a copy of the current work-in-progress website, using today's date as the folder name. 
+(this is handled by the .github/workflows/manual_release.yml script).
 The script will also add links to the new release in the "Revision and Update Notes" page of each older release,
 and redirect visitors of rjaques.github.io/sira-project to the latest release.
 The updated website should be available in ca. 2 minutes.
