@@ -1,1 +1,1 @@
-[The Projected Travels of Ibn Isḥāq](images/map.jpeg)
+[The Projected Travels of Ibn Isḥāq](images/map.jpg)
