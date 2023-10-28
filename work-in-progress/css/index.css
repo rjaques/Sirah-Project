@@ -86,7 +86,7 @@ p {
     font-style: italic;
 }
 
-img {
+#pageContent img {
     /*Limit the height and width of the image
     (only in main part, not in header):*/
     width: 90%;
