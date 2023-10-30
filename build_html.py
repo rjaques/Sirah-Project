@@ -111,11 +111,11 @@ for index, row in df.iterrows():
     except:
         link = ""
     try: 
-        note = '<span title="' + row["Notes"] + '">*</span>'
+        note = '<span title="' + row["Notes"] + '" class="openiti-url">*</span>'
     except:
         note = ""
     # store this item in the markdown table:
-    bibliography_md += f"| {key} | {citation}{note} | {link} |\n"
+    bibliography_md += f'| <a class="siglum" id="{key}">{key}</a> | {citation}{note} | {link} |\n'
 with open(bibl_fp, mode="w", encoding="utf-8") as f:
     f.write(bibliography_md)
 
@@ -807,10 +807,12 @@ def format_comment(comment):
         page = m.group(3).lstrip('0')
         try:
             expanded = bibliography_dict[abb]
+            return f'<a href="./bibliography.html#{ref}">{ref}</a> ({expanded}, vol. {vol} p. {page})'
         except:
             print("REFERENCE NOT FOUND IN BIBLIOGRAPHY:", abb)
             expanded = "[REFERENCE NOT FOUND IN BIBLIOGRAPHY]"
-        return f"{ref} ({expanded}, vol. {vol} p. {page})"
+            return f'{ref} ({expanded}, vol. {vol} p. {page})'
+        
 
     def expand_witness(m):
         """Expand a witness abbreviation (e.g., WSACD) into a full reference.
@@ -894,9 +896,9 @@ def format_reference(id_, text):
         print(text)
         return ""
     if last_page != first_page:
-        reference = f"{book_ref}, vol. {vol_no} p. {first_page}-{last_page}"
+        reference = f'<a href="./bibliography.html#{id_[:4]}" title="bibliography">{book_ref}</a>, vol. {vol_no} p. {first_page}-{last_page}'
     else:
-        reference = f"{book_ref}, vol. {vol_no} p. {last_page}"
+        reference = f'<a href="./bibliography.html#{id_[:4]} title="bibliography"">{book_ref}</a>, vol. {vol_no} p. {last_page}'
     
     # remove any html tags inside the reference:
     reference_without_tags = re.sub(r" *<[^>]+?> *", " ", reference)
