@@ -107,11 +107,15 @@ for index, row in df.iterrows():
     url = row["URI"]
     try:
         uri = url.split("/")[-1]
-        link = f"[🔗]({url})"
+        #link = f"[🔗]({url})"
+        if uri:
+            link = f'<a href="{url}" class="openiti-url">🔗</a>'
+        else:
+            link = ""
     except:
         link = ""
     try: 
-        note = '<span title="' + row["Notes"] + '" class="openiti-url">*</span>'
+        note = '<span title="' + row["Notes"] + '">*</span>'
     except:
         note = ""
     # store this item in the markdown table:
@@ -898,7 +902,7 @@ def format_reference(id_, text):
     if last_page != first_page:
         reference = f'<a href="./bibliography.html#{id_[:4]}" title="bibliography">{book_ref}</a>, vol. {vol_no} p. {first_page}-{last_page}'
     else:
-        reference = f'<a href="./bibliography.html#{id_[:4]} title="bibliography"">{book_ref}</a>, vol. {vol_no} p. {last_page}'
+        reference = f'<a href="./bibliography.html#{id_[:4]}" title="bibliography">{book_ref}</a>, vol. {vol_no} p. {last_page}'
     
     # remove any html tags inside the reference:
     reference_without_tags = re.sub(r" *<[^>]+?> *", " ", reference)
