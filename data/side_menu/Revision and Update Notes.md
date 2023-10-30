@@ -9,6 +9,9 @@ Please always cite the website including its release number
 will always redirect to the latest release).
 Released versions of the website are stable and will remain available.
 
+The latest comments on which witnesses have been processed and to what extent can be found 
+[in this spreadsheet](https://docs.google.com/spreadsheets/d/117bKv_8te1b0pbbxRuiTlpl-t45IenJiRSENa6-0f7w/edit?usp=sharing)
+
 ## Release list:
 <!-- INSERT NEWER VERSION BELOW THIS -->
 * [v2023-10-30](https://rjaques.github.io/Sirah-Project/v2023-10-30)
