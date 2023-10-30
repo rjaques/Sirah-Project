@@ -2,7 +2,7 @@
 
 This website is updated and released periodically. 
 
-The current release is **[v2023-10-28](https://rjaques.github.io/Sirah-Project/v2023-10-28)**
+The current release is **[v2023-10-30](https://rjaques.github.io/Sirah-Project/v2023-10-30)**
 
 Please always cite the website including its release number 
 ([https://rjaques.github.io/Sirah-Project](https://rjaques.github.io/Sirah-Project) 
@@ -11,6 +11,7 @@ Released versions of the website are stable and will remain available.
 
 ## Release list:
 <!-- INSERT NEWER VERSION BELOW THIS -->
+* [v2023-10-30](https://rjaques.github.io/Sirah-Project/v2023-10-30)
 * [v2023-10-28](https://rjaques.github.io/Sirah-Project/v2023-10-28)
 * [v2023-10-27](https://rjaques.github.io/Sirah-Project/v2023-10-27)
 * [v2023-09-01](https://rjaques.github.io/Sirah-Project/v2023-09-01)
