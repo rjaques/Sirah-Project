@@ -8,4 +8,4 @@ The current iteration of the SDR reader allows users to compare variations withi
 
 Each new witness edition  will be distinguished by the date of the release in the url. Users can return to the release they used in the past and cite that release in their work as well as use later releases as new material is added to the reader. 
 
-Please direct comments and questions to Kevin Jaques at rjaques@indiana.edu. 
+Please direct comments and questions to [Kevin Jaques](mailto:rjaques@indiana.edu). 
