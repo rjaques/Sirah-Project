@@ -97,6 +97,14 @@ p {
     display: block;
 }
 
+.siglum {
+    text-decoration:none;
+}
+.openiti-url{
+    text-decoration:none;
+}
+
+
 /* the header and horizontal menu bar: */
 
 #header {
