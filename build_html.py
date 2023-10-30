@@ -811,7 +811,7 @@ def format_comment(comment):
         page = m.group(3).lstrip('0')
         try:
             expanded = bibliography_dict[abb]
-            return f'<a href="./bibliography.html#{ref}">{ref}</a> ({expanded}, vol. {vol} p. {page})'
+            return f'<a href="./bibliography.html#{abb}">{ref}</a> ({expanded}, vol. {vol} p. {page})'
         except:
             print("REFERENCE NOT FOUND IN BIBLIOGRAPHY:", abb)
             expanded = "[REFERENCE NOT FOUND IN BIBLIOGRAPHY]"
