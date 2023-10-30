@@ -852,6 +852,7 @@ def format_comment(comment):
     comment = re.sub(r"\bW[A-Z]{4}\b", expand_witness, comment)
 
     # format Qur'an:
+    comment = format_quran(comment)
     
 
     # replace reference IDs with the full reference:
