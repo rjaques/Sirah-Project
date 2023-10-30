@@ -720,6 +720,15 @@ def format_page_number_sub(match_obj):
     a = f"<a class='page-no' href='javascript:void(0);' title='end of page {page} of vol. {vol}'>{PAGE_SYMBOL}</a>"
     return a
 
+def format_quran(t):
+    """Format Qur'an citations and add link to Quran.com"""
+
+    t = re.sub(r"@QURS(\d+)A(\d+)_BEG([^@]+?)@QURS\1A(\d+)_END", 
+               r'<a href="https://quran.com/\1/\2" class="quran" title="Qurʾān \1.\2-\4" target="_blank">\3</a>', t)
+    # remove end aya if it's the same as start aya:
+    t = re.sub(r"(Qurʾān \d+\.)(\d+)-\2", r"\1\2", t)
+    return t
+    
 
 def format_witness_text(main_id, witness_text):
     """Convert a witness report paragraph to HTML.
@@ -741,10 +750,7 @@ def format_witness_text(main_id, witness_text):
     t = re.sub(r"(@TR\w+@)", r'<a class="hidden" href="#">\1</a>', t)
 
     # format Quran quotations:
-    t = re.sub(r"@QURS(\d+)A(\d+)_BEG([^@]+?)@QURS\1A(\d+)_END", 
-               r'<a href="https://quran.com/\1/\2" class="quran" title="Qurʾān \1.\2-\4" target="_blank">\3</a>', t)
-    # remove end aya if it's the same as start aya:
-    t = re.sub(r"(Qurʾān \d+\.)(\d+)-\2", r"\1\2", t)
+    t = format_quran(t)
 
     # format poetry:
     t = re.sub(r"\n(.+?) %~% (.+)", r"\n<span class='poetry-line'><span class='hemistich1'>\1</span>  <span class='hemistich2'>\2</span></span>", t)
@@ -844,6 +850,9 @@ def format_comment(comment):
     
     # replace witness abbreviations with their full names:
     comment = re.sub(r"\bW[A-Z]{4}\b", expand_witness, comment)
+
+    # format Qur'an:
+    
 
     # replace reference IDs with the full reference:
     comment = re.sub(r"([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)", expand_reference, comment)
