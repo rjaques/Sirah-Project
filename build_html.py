@@ -119,7 +119,7 @@ for index, row in df.iterrows():
     except:
         note = ""
     # store this item in the markdown table:
-    bibliography_md += f'| <a class="siglum" id="{key}">{key}</a> | {citation}{note} | {link} |\n'
+    bibliography_md += f'| <span class="siglum" id="{key}">{key}</span> | {citation}{note} | {link} |\n'
 with open(bibl_fp, mode="w", encoding="utf-8") as f:
     f.write(bibliography_md)
 
