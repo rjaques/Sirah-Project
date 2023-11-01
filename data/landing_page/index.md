@@ -10,7 +10,7 @@ In some instances, the quotations attributed to Ibn Saʿd are highly similar to 
 
 One of the remarkable discoveries of working on the reconstruction of the Ibn Saʿd witness, as well as almost all other witnesses, is the large level of variations in quotations. Traditions recounting the “same” quotation demonstrate that transmitters edited passages, removing and adding material, often with no clear indication as to why. As you read through the Ibn Saʿd witness, pay attention to the variations, easily demonstrated for the reader in fields that highlight differences and similarities. 
 
-Once the Ibn Saʿd witness is complete, I plan to turn to the [Jarīr b. Ḥāzim witness](./WJHZA.html). Ibn Ḥāzim appears to have acquired extended versions of several of Ibn Isḥāq’s textual divisions before the text acquired by al-Bakkāʾī was composed. It represents the next major collection after that of Ibn Saʿd and early work suggests remarkable differences between in, Ibn Saʿd, and al-Bakkāʾī. 
+Once the Ibn Saʿd witness is complete, I plan to turn to the [Jarīr b. Ḥāzim witness](./WJHZA.html). Ibn Ḥāzim appears to have acquired extended versions of several of Ibn Isḥāq’s textual divisions before the text acquired by al-Bakkāʾī was composed. It represents the next major collection after that of Ibn Saʿd and early work suggests remarkable differences between it, Ibn Saʿd, and al-Bakkāʾī. 
 
 For questions and comments please contact [Kevin Jaques](mailto:rjaques@indiana.edu).
 
