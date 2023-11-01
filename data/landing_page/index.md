@@ -17,7 +17,9 @@ For questions and comments please contact [Kevin Jaques](mailto:rjaques@indiana.
 
 
 ### Endnotes 
-(1)	The accuracy of the script was 100%. It found every naming variation and combination that was input into the script. Accuracy was reduced due to problems in the naming variations themselves. For instance, after the TIL was initially run it was discovered that several texts render the name “Isḥāq” (اسحاق) as “Isḥaq” (اسحق). In order to find a combination of names all possible variations must be included in the script, in other words, it cannot locate what it does not know. 
+(1)	The accuracy of the script was 100%. It found every naming variation and combination that was input into the script. Accuracy was reduced due to problems in the naming variations themselves. For instance, after the TIL was initially run it was discovered that several texts render the name “Isḥāq” (اسحاق) as “Isḥaq” (اسحق). In order to find a combination of names all possible variations must be included in the script, in other words, it cannot locate what it does not know.
+ 
 (2)	The mARKdown tags were created by Maxim Romanov, many specifically for the SDR project. 
+
 (3)	The al-Bakkāʾī witness was also presented in the October 2023 release, and as of that date consisted of 1776 passages, 1659 of which were drawn from the Ibn Hishām redaction. Ibn Hishām, in the introduction to his redaction, states that he removed material from al-Bakkāʾī’s copy for a variety of reasons. Many of the defragmented quotations (i.e., material not found in the redaction but in other texts) consist of poems as well as stories that take place after the death of Muḥammad, the very kinds of material Ibn Hishām states that he removed. See ʿAbd al-Mālik b. Hishām, *al-Sīrah al-Nabuwīyah*, ed. Muṣṭafā Saqqā, Ibrāhīm Ibyārī, and ʿAbd al-Ḥafīẓ Shalabī (Cairo: Muṣṭafā al-Bābī al-Ḥalabī, 1936), vol. 1, 4. 
 
