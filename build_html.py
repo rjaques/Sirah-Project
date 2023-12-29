@@ -861,6 +861,9 @@ def format_comment(comment):
     # remove all tags inside the comment:
     comment_without_tags = re.sub(r" *<[^>]+?> *", " ", comment)
 
+    # add italics:
+    comment = re.sub("\*(.+)\*", r"<i>\1</i>", comment)
+
     # split comment into paragraphs:
     split_comment = re.split(r" *\n+ *", comment.strip())
     comment = "\n    ".join([f'<p dir="auto">{p}</p>' for p in split_comment if p.split()])
