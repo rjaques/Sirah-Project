@@ -858,11 +858,11 @@ def format_comment(comment):
     # replace reference IDs with the full reference:
     comment = re.sub(r"([A-Z]{4,5})V(\d+)P(\d+)([A-Z]*)", expand_reference, comment)
 
-    # remove all tags inside the comment:
-    comment_without_tags = re.sub(r" *<[^>]+?> *", " ", comment)
-
     # add italics:
     comment = re.sub("\*(.+?)\*", r"<i>\1</i>", comment)
+    
+    # remove all tags inside the comment:
+    comment_without_tags = re.sub(r" *<[^>]+?> *", " ", comment)
 
     # split comment into paragraphs:
     split_comment = re.split(r" *\n+ *", comment.strip())
