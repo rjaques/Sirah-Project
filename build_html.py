@@ -747,7 +747,8 @@ def format_witness_text(main_id, witness_text):
     t = re.sub(r"PageV0*([1-9]\d*)P0*([1-9]\d*)[A-Z]*", format_page_number_sub, t)
     
     # TO DO: add links to persons mentioned in the text (currently hiding them)
-    t = re.sub(r"(@TR\w+@)", r'<a class="hidden" href="#">\1</a>', t)
+    t = re.sub(r"(@TR\w+@)", r'<a class="hidden TR" href="#">\1</a>', t)
+    t = re.sub(r"(@EW\w+@)", r'<a class="hidden EW" href="#">\1</a>', t)
 
     # format Quran quotations:
     t = format_quran(t)
