@@ -8139,6 +8139,20 @@ PageV02P329
 PageV24P322
 # @COMMENT: This passage refers to the well known incident usually referred to as the "stoning of Māʿzin b. Mālik." This passage is not found in the redaction of Ibn Hishām.
 
+### ||| مالك بن هبيرة
+
+# @HKMXV02P530A_BEG_WSACD
+VAR_TDSHV56P511A الترمذي حدثنا أبو كريب ثنا @TR1_IBMK@ عبد الله بن المبارك @TR1_YBWS@ ويونس بن بكير عن محمد بن إسحاق عن يزيد بن أبي حبيب عن مرثد بن عبد الله اليزني قال كان مالك بن هبيرة إذا صلى على جنازة فتقال الناس عليها جزأهم ثلاثة أجزاء ثم قال قال رسول الله صلى الله عليه وسلم من صلى عليه ثلاثة صفوف فقد أوجب قال أبو عيسى حديث ابن هبيرة حديث حسن هكذا روى غير واحد عن محمد بن إسحاق وروى @TR1_SACD@ إبراهيم بن سعد عن محمد بن إسحاق هذا الحديث @HKMXV02P530A_END_WSACD
+PageV02P530
+# @COMMENT: This passage refers to the practice of Mālik b. Hubayrah, and his division of rows during funeral prayer. He is not mentioned in the redaction of Ibn Hishām. This tradition (also located in WSACD and WIBMK) appears to be the only rference to Ibn Hubayrah in the Ibn Isḥāq corpus. Its placement in the biographical section is based on content. EC_07/23/26@
+
+# @TMSXV03P338A_BEG_WSACD حدثنا أبو كريب قال حدثنا @TR1_IBMK@ عبد الله بن المبارك @TR1_YBWS@ ويونس بن بكير عن محمد بن إسحاق عن يزيد بن أبي حبيب عن مرثد بن عبد الله اليزني قال كان مالك بن هبيرة إذا صلى على جنازة فتقال الناس عليها جزأهم ثلاثة أجزاء ثم قال قال رسول الله صلى الله عليه وسلم من صلى عليه ثلاثة صفوف فقد أوجب وفي الباب عن عائشة وأم حبيبة وأبي هريرة وميمونة زوج النبي صلى الله عليه وسلم حديث مالك بن هبيرة حديث حسن هكذا رواه غير واحد عن محمد بن إسحاق وروى @TR1_SACD@ إبراهيم بن سعد عن محمد بن إسحاق هذا الحديث. @TMSXV03P338A_BEG_WSACD
+PageV03P338
+
+# @TDSHV56P511A_BEG_WSACD
+VAR_HKMXV02P530A ويونس بن بكير عن محمد بن إسحاق عن يزيد بن ابي حبيب عن مرثد بن عبد الله اليزني قال كان مالك بن هبيرة إذ صلى على الجنازة فتقال الناس عليها جزأهم ثلاثة أجزاء ثم قال قال رسول الله صلى الله عليه وسلم من صلى عليه ثلاثة صفوف فقد أوجب قال أبو عيسى هكذا رواه غير واحد عن محمد بن إسحاق وروى @TR1_SACD@ إبراهيم بن سعد عن محمد بن إسحاق هذا الحديث @TDSHV56P511A_END_WSACD
+PageV56P511
+
 ### ||| محمد بن جعفر بن الزبير
 
 # @BKTMV01P340A_BEG_WSACD
@@ -8180,21 +8194,6 @@ PageV02P228
 # @MYWXV13P408A_BEG_WSACD حدثنا أبو خيثمة زهير حدثنا @TR2_YISI@ يعقوب حدثنا @TR1_SACD@ أبي عن ابن إسحاق قال أخبرني عمرو بن أبي عمرو مولى المطلب عن عبد الرحمن بن الحويرث عن محمد بن جبير بن مطعم عن أبيه مثل حديث @EW1_MMSZ@ ابن شهاب لم يزد ولم ينقص @MYWXV13P408A_END_WSACD 
 PageV13P408
 # @COMMENT: This passage seems to be evaluative. Similar evaluative traditions are found in the biographies of Maʿbad b. Kaʿb (see HBHXV37P291A)and Abū Hurayrah (see HBHXV15P78A). This passage is not found in the redaction of Ibn Hishām. Placement is based on content. 
-
-### ||| مرثد بن عبد الله اليزني 
-
-# @TMSXV03P338A_BEG_WSACD
-VAR_TDSHV56P511A VAR_HKMXV02P530A حدثنا أبو كريب قال حدثنا عبد الله بن المبارك ويونس بن بكير عن محمد بن إسحاق عن يزيد بن أبي حبيب عن مرثد بن عبد الله اليزني قال كان مالك بن هبيرة إذا صلى على جنازة فتقال الناس عليها جزأهم ثلاثة أجزاء ثم قال قال رسول الله صلى الله عليه وسلم من صلى عليه ثلاثة صفوف فقد أوجب @TMSXV03P338A_END_WSACD
-PageV03P338
-This passage is not found in the redaction of Ibn Hishām. Placement is based on content. 
-
-# @TDSHV56P511A_BEG_WSACD
-VAR_TMSXV03P338A VAR_HKMXV02P530A ويونس بن بكير عن محمد بن إسحاق عن يزيد بن ابي حبيب عن مرثد بن عبد الله اليزني قال كان مالك بن هبيرة إذ صلى على الجنازة فتقال الناس عليها جزأهم ثلاثة أجزاء ثم قال قال رسول الله صلى الله عليه وسلم من صلى عليه ثلاثة صفوف فقد أوجب قال أبو عيسى هكذا رواه غير واحد عن محمد بن إسحاق وروى @TR1_SACD@ إبراهيم بن سعد عن محمد بن إسحاق هذا الحديث @TDSHV56P511A_END_WSACD
-PageV56P511
-
-# @HKMXV02P530A_BEG_WSACD
-VAR_TMSXV03P338A VAR_TDSHV56P511A الترمذي حدثنا أبو كريب ثنا @TR1_IBMK@ عبد الله بن المبارك @TR1_YBWS@ ويونس بن بكير عن محمد بن إسحاق عن يزيد بن أبي حبيب عن مرثد بن عبد الله اليزني قال كان مالك بن هبيرة إذا صلى على جنازة فتقال الناس عليها جزأهم ثلاثة أجزاء ثم قال قال رسول الله صلى الله عليه وسلم من صلى عليه ثلاثة صفوف فقد أوجب قال أبو عيسى حديث ابن هبيرة حديث حسن هكذا روى غير واحد عن محمد بن إسحاق وروى @TR1_SACD@ إبراهيم بن سعد عن محمد بن إسحاق هذا الحديث @HKMXV02P530A_END_WSACD
-PageV02P530
 
 ### ||| مسطح بن أثاثة بن عباد بن المطلب
 

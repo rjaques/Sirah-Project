@@ -13,7 +13,7 @@
 #META# Link
 
 # @BKHJV01P061C_BEG_WMAAI
-VAR_BQQXV01P056C حدثنا محمود قال حدثنا البخاري قال حدثنا قتيبة قال حدثنا محمد بن أبي عدي عن محمد بن إسحاق عن مكحول عن محمود بن الربيع عن عبادة بن الصامت قال صلى بنا رسول الله صلى الله عليه وسلم صلاة الغداة قال فثقلت عليه القراءة فقال إني لأراكم تقرءون خلف إمامكم قال قلنا أجل يا رسول الله قال فلا تفعلوا إلا بأم القرآن فإنه لا صلاة لمن لم يقرأ بها. @BKHJV01P061C_END_WMAAI
+VAR_BQQXV01P056C حدثنا محمود قال حدثنا البخاري قال حدثنا قتيبة قال حدثنا @TR1_MAAI@ محمد بن أبي عدي عن محمد بن إسحاق عن مكحول عن محمود بن الربيع عن عبادة بن الصامت قال صلى بنا رسول الله صلى الله عليه وسلم صلاة الغداة قال فثقلت عليه القراءة فقال إني لأراكم تقرءون خلف إمامكم قال قلنا أجل يا رسول الله قال فلا تفعلوا إلا بأم القرآن فإنه لا صلاة لمن لم يقرأ بها. @BKHJV01P061C_END_WMAAI
 PageV01P061
 # @COMMENT: This refers to an event apparently late in Muḥammad's life when it became difficult for him to complete the recitation of the prayer. It is not found in the redaction of Ibn Hishām, nor is the phrase "Umm al-Qur'an." This represents one of Ibn Isḥāq's most frequently reused passages. Placement is based on content dealing with prayer. The passage is also found in WSACD: HBHXV37P409A, HBHXV37P413A, DRQSV02P099C, BYTXV01P131D, BQSXV02P234C, BQQXV01P056C, TTXXV02P222C, KTHRV04P580A, and HJRTV06P424B; WASKA: TMSXV02P116B, TMBXV01P406B, HKSXV03P194A, BQQXV01P056C, HMMXV02P264A, HMBSV03P082A, HKMXV02P200D, TTXXV02P222C; WYSAU: KHZXV03P036D; WMSAH: HBHXV37P343A, HBHXV37P410A, DWNXV01P217B, KHMSV01P205C, BQMXV03P080B, BQQXV01P056C, HKMXV02P200C, TTXXV02P222C, ASHDV03P495A, HJRTV06P424B; WABAB: KHZXV03P036D, BNHXV05P156C, BQQXV01P056C, TTXXV02P222C; WISUL: KHZXV03P036D, BNHXV05P086B, DRQSV02P097A, BQQXV01P056C, BRWXV11P044A, WAKMW: JNSMV01P088G, BQRXV01P207A, BQSXV02P234A, BQQXV01P056A, BQQXV01P056C, TTXXV02P218A, HJRTV06P424B; WHAYA: HBHXV37P368A, KHZXV03P036D, HAMAV02P197B, DHRSV03P107A, THSMV01P215C, HKSXV03P190A, BNHXV05P095A, DRQSV02P099B, BYTXV01P131D, BQQXV01P056A, BQQXV01P056C, BRWXV11P044A, TTXXV02P222C, KTHRV04P579B, HJRTV06P424B; WMAAI: BKHJV01P061C and BQQXV01P056C; WAANH: BRWXV11P044C, BNHXV05P095A, BQQXV01P056C, BRWXV11P044A, TTXXV02P222C, HJRTV06P424B; WUMHA: DRQSV02P099A, BQQXV01P056C, HJRTV06P424B; WISUL: HJRTV06P424B; WYAHA: BQQXV01P056C; WHSDB: BQQXV01P056C; and without a witness: IHMAV02P271A and BQQXV01P064B. @EC_01/17/23@ @EC_01/02/24@
 
@@ -81,3 +81,12 @@ PageV44P211
 
 # @KTHBV05P190C_BEG_WMAAI وقال محمد بن إسحاق حدثني أبو عبيدة عن عبد الله بن زمعة عن أبيه وأمه زينب بنت أم سلمة عن أم سلمة قالت كانت الليلة التي يدور فيها رسول الله صلى الله عليه وسلم ليلة النحر فكان رسول الله عندي فدخل وهب بن زمعة ورجل من آل أبي أمية متقمصين فقال لهما رسول الله صلى الله عليه وسلم أفضتما قالا لا قال فانزعا قميصكما فنزعاهما فقال له وهب ولم يا رسول الله فقال هذا يوم أرخص لكم فيه إذا رميتم الجمرة ونحرتم هديا إن كان لكم فقد حللتم من كل شيء حرمتم منه إلا النساء حتى تطوفوا بالبيت فإذا رميتم ولم تفيضوا صرتم حرما كما كنتم أول مرة حتى تطوفوا بالبيت وهكذا رواه أبو داود عن أحمد بن حنبل ويحيى بن معين كلاهما عن @TR1_MAAI@ ابن أبي عدي عن ابن إسحاق فذكره. @KTHBV05P190C_END_WMAAI
 PageV05P190
+
+### | تراجم
+
+### || تراجم الرجال
+
+### ||| مالك بن هبيرة
+
+# @MHRXV02P503A_BEG_WMAAI حدثنا عمرو بن علي ثنا @TR1_MAAI@ محمد بن أبي عدي عن محمد بن إسحاق قال حدثني يزيد بن أبي حبيب عن مرثد بن عبد الله عن مالك بن هبيرة وكانت له صحبة وكان إذا أتي بالجنازة ليصلي عليها فذكر محمد بن إسحاق شيئا معناه فتقال أهلها جزأهم ثلاثة صفوف ثم يصلي عليها ويقول إن رسول الله صلى الله عليه وسلم قال ما صف صفوف ثلاثة من المسلمين على جنازة إلا وجبت. @MHRXV02P503A_END_WMAA
+PageV02P503
