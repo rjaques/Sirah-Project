@@ -3264,8 +3264,13 @@ PageV17P139
 # @HSNXV01P457C_BEG_WZATB وعمارة بن حزم بن زيد بن لوذان بن عمرو بن عبد عوف بن غنم بن مالك بن النجار شهد بدرا وأحدا والخندق والمشاهد كلها قتل يوم اليمامة شهيدا في خلافة أبي بكر الصديق رضي الله عنه وأسعد بن زرارة بن عدس بن عبيد بن ثعلبة ابن غنم بن مالك بن النجار نقيب مات قبل بدر ومسجد رسول الله صلى الله عليه وسلم يبنى وهو أبو أمامة ستة نفر ومن بني عمرو بن مبذول ومبذول عامر بن مالك بن النجار سهل ابن عتيك بن نعمان بن عمرو بن عتيك بن عمرو شهد بدرا رجل. @HSNXV01P457C_END_WZATB
 PageV01P457
 
-# @HSNXV01P457E_BEG_WZATB أوس بن ثابت بن المنذر بن حرام بن عمرو بن زيد مناة بن عدي بن عمرو بن مالك بن النجار شهد بدرا وأبو طلحة وهو زيد بن سهل PageV01P457 ابن الأسود بن حرام بن عمرو بن زيد مناة بن عدي بن عمرو بن مالك بن النجار شهد بدرا رجلان ومن بني مازن بن النجار قيس بن أبي صعصعة واسم أبي صعصعة عمرو بن زيد بن عوف بن مبذول بن عمرو بن غنم بن مازن شهد بدرا وكان رسول الله صلى الله عليه وسلم جعله على الساقة يومئذ وعمرو بن غزية بن عمرو بن ثعلبة بن خنساء بن مبذول بن عمرو بن غنم بن مازن رجلان فجميع من شهد العقبة من بني النجار أحد عشر رجلا. @HSNXV01P457E_END_WZATB
+# @HSNXV01P457E_BEG_WZATB
+VAR_TDSHV49P469C أوس بن ثابت بن المنذر بن حرام بن عمرو بن زيد مناة بن عدي بن عمرو بن مالك بن النجار شهد بدرا وأبو طلحة وهو زيد بن سهل PageV01P457 ابن الأسود بن حرام بن عمرو بن زيد مناة بن عدي بن عمرو بن مالك بن النجار شهد بدرا رجلان ومن بني مازن بن النجار قيس بن أبي صعصعة واسم أبي صعصعة عمرو بن زيد بن عوف بن مبذول بن عمرو بن غنم بن مازن شهد بدرا وكان رسول الله صلى الله عليه وسلم جعله على الساقة يومئذ وعمرو بن غزية بن عمرو بن ثعلبة بن خنساء بن مبذول بن عمرو بن غنم بن مازن رجلان فجميع من شهد العقبة من بني النجار أحد عشر رجلا. @HSNXV01P457E_END_WZATB
 PageV01P458
+
+# @TDSHV49P469C_BEG_WZATB
+VAR_HSNXV01P457E ومن بني مازن بن النجار قيس بن أبي صعصعة واسم أبي صعصعة عمرو بن زيد بن عوف بن مبذول بن عمرو بن غنم بن مازن بن النجار شهد بدرا والعقبة وجعله النبي صلى الله عليه وسلم يوم بدر على الساقة أخبرنا بنسبه ابن هشام عن زياد عن ابن إسحاق جاء عنه حديث. @TDSHV49P469C_END_WZATB
+PageV49P469
 
 # @HSNXV01P458G_BEG_WZATB
 VAR_STBXV17P195A قال ابن إسحاق ومن بلحارث بن الخزرج سعد بن الربيع بن عمرو بن أبي زهير بن مالك بن امرئ القيس بن مالك الأغر بن ثعلبة بن كعب بن الخزرج بن الحارث نقيب شهد بدرا وقتل يوم أحد شهيدا وخارجة بن زيد ابن أبي زهير بن مالك بن امرئ القيس بن مالك الأغر بن ثعلبة بن كعب ابن الخزرج بن الحارث شهد بدرا وقتل يوم أحد شهيدا وعبد الله بن رواحة ابن ثعلبة بن امرئ القيس بن عمرو بن امرئ القيس الأكبر بن مالك الأغر بن ثعلبة بن كعب بن الخزرج بن الحارث نقيب شهد بدرا وأحدا والخندق ومشاهد رسول الله صلى الله عليه وسلم كلها إلا الفتح وما بعده وقتل يوم مؤتة شهيدا أميرا لرسول الله صلى الله عليه وسلم وبشير بن سعد بن ثعلبة بن خلاس بن زيد بن مالك بن ثعلبة بن كعب بن الخزرج بن الحارث أبو النعمان PageV01P458 ابن بشير شهد بدرا وعبد الله بن زيد بن ثعلبة بن عبد الله بن زيد مناة ابن الحارث بن الخزرج شهد بدرا وهو الذي أري النداء للصلاة فجاء به إلى رسول الله صلى الله عليه وسلم فأمر به وخلاد بن سويد بن ثعلبة بن عمرو ابن حارثة بن امرئ القيس بن مالك الأغر بن ثعلبة بن كعب بن الخزرج شهد بدرا وأحدا والخندق وقتل يوم بني قريظة شهيدا طرحت عليه رحى من أطم من أطامها فشدخته شدخا شديدا فقال رسول الله صلى الله عليه وسلم فيما يذكرون إن له لأجر شهيدين وعقبة بن عمرو بن ثعلبة بن أسيرة ابن عسيرة بن جدارة بن عوف بن الحارث بن الخزرج وهو أبو مسعود وكان أحدث من شهد العقبة سنا مات في أيام معاوية لم يشهد بدرا سبعة نفر ومن بني بياضة بن عامر بن زريق بن عبد حارثة بن مالك بن غضب بن جشم بن الخزرج زياد بن لبيد بن ثعلبة بن سنان بن عامر بن عدي بن أمية ابن بياضة شهد بدرا وفروة بن عمرو بن وذفة بن عبيد بن عامر بن بياضة شهد بدرا. @HSNXV01P458G_END_WZATB
@@ -4648,6 +4653,7 @@ PageV01P642
 
 # @HSNXV01P642H_BEG_WZATB قال ابن إسحاق ثم بعث رسول الله صلى الله عليه وسلم عند الفتح عبد الله ابن رواحة بشيرا إلى أهل العالية بما فتح الله عز وجل على رسوله صلى الله عليه وسلم وعلى المسلمين وبعث زيد بن حارثة إلى أهل السافلة قال أسامة بن زيد فأتانا الخبر حين سوينا التراب على رقية ابنة رسول الله صلى الله عليه وسلم التي كانت عند عثمان بن عفان كان رسول الله صلى الله عليه وسلم خلفني عليها مع PageV01P642 عثمان أن زيد بن حارثة قد قدم قال فجئته وهو واقف بالمصلى قد غشيه الناس وهو يقول قتل عتبة بن ربيعة وشيبة بن ربيعة وأبو جهل ابن هشام وزمعة بن الأسود وأبو البختري العاص بن هشام وأمية بن خلف ونبيه ومنبه ابنا الحجاج قال قلت يا أبت أحق هذا قال نعم والله يا بني ثم أقبل رسول الله صلى الله عليه وسلم قافلا إلى المدينة ومعه الأسارى من المشركين وفيهم عقبة بن أبي معيط والنضر بن الحارث واحتمل رسول الله صلى الله عليه وسلم معه النفل الذي أصيب من المشركين وجعل على النفل عبد الله بن كعب بن عمرو بن عوف بن مبذول بن عمرو بن غنم بن مازن بن النجار فقال راجز من المسلمين. @HSNXV01P642H_END_WZATB
 PageV01P643
+# @COMMENT: A similar passage is found in WSACD on NYMXV04P1763B referring to the events following the Battle of Badr. WZATB on HSNXV01P642H refers to the individual placed in charge of the *nafl* as ʿAbd Allāh b. ʿAmr b. ʿAwf b. Mabdhūl b. ʿAmr b. Ghanm b. Māzin b. al-Najjār whereas WSACD refers to him as ʿAbd Allāh b. Kaʿb b. Zayd b. Mabdhūl b. ʿAmr b. Māzin b. al-Najjār. @EC_07/31/26@
 
 # @HSNXV01P643C_BEG_WZATB أقم لها صدورها يا بسبس %~% ليس بذي الطلح لها معرس
 ولا بصحراء غمير محبس %~% إن مطايا القوم لا تخيس
@@ -10066,7 +10072,7 @@ PageV02P478
 علينا دلاص من تراث محرق %~% كلون السماء زينتها نجومها
 نرفهها عنا ببيض صوارم %~% إذا جردت في غمرة لا نشيمها. @HSNXV02P478D_END_WZATB
 PageV02P481
-# @COMMENT: A similar passage is found in WSACD on ZTTHV02P022C and ZTKXV01P569E that is placed at the beginning of the story of Ṭāʾif, although the passage is longer and more detailed than the fragment found in WSACD. ZTTHV02P023A also contains similar elements but is worded differently and contains more detail. A similar passage, worded differently, is also found in WJHZA. No other version of the fragment is found in the corpus. @EC_02/02/23@ 
+# @COMMENT: A similar passage is found in WSACD on ZTTHV02P022C and ZTKXV01P569E that is placed at the beginning of the story of Ṭāʾif, although the passage is longer and more detailed than the fragment found in WSACD. ZTTHV02P023A also contains similar elements but is worded differently and contains more detail. A similar passage, worded differently, is also found in WJHZA on SFTXV01P088B. No other version of the fragment is found in the corpus. @EC_02/02/23@ 
 
 # @HSNXV02P481D_BEG_WZATB قال ابن إسحاق وقال شداد بن عارض الجشمي في مسير رسول الله صلى الله عليه وسلم إلى الطائف
 لا تنصروا اللات إن الله مهلكها %~% وكيف ينصر من هو ليس ينتصر PageV02P481
@@ -10081,7 +10087,7 @@ PageV02P482
 
 # @HSNXV02P482D_BEG_WZATB قال ابن إسحاق فحدثني عمرو بن شعيب أنه أقاد يومئذ ببحرة الرغاء حين نزلها بدم وهو أول دم أقيد به في الإسلام رجل من بني ليث قتل رجلا من هذيل فقتله به وأمر رسول الله صلى الله عليه وسلم وهو بلية بحصن مالك بن عوف فهدم ثم سلك في طريق يقال لها الضيقة فلما توجه فيها رسول الله صلى الله عليه وسلم سأل عن اسمها فقال ما اسم هذه الطريق فقيل له الضيقة فقال بل هي اليسرى ثم خرج منها على نخب حتى نزل تحت سدرة يقال لها الصادرة قريبا من مال رجل من ثقيف فأرسل إليه رسول الله صلى الله عليه وسلم إما أن تخرج وإما أن نخرب عليك حائطك فأبى أن يخرج فأمر رسول الله صلى الله عليه وسلم بإخرابه ثم مضى رسول الله صلى الله عليه وسلم حتى نزل قريبا من الطائف فضرب به عسكره فقتل به ناس من أصحابه بالنبل وذلك أن العسكر اقترب من حائط الطائف فكانت النبل تنالهم ولم يقدر المسلمون على أن يدخلوا حائطهم أغلقوه دونهم فلما أصيب أولئك النفر من أصحابه بالنبل وضع عسكره عند مسجده الذي بالطائف اليوم فحاصرهم بضعا وعشرين ليلة. @HSNXV02P482D_END_WZATB
 PageV02P482
-# @COMMENT: A similar passage is found in WSACD on ZTTHV02P022C and ZTKXV01P569E which mentions Abū Bakrah, who is not mentioned in the redaction of Ibn Hishām. He was Nufayʿ b. al-Ḥārith b. Kaladah b. ʿAmr al-Thaqafī. Some say his name was Masrūḥ. He was one of four slaves who came out from Ṭāʾif whom the prophet freed. He was a companion and a source of some traditions. He died in the year 52/672 (HJTTV10P469A-470A). Abū Bakrah is mentioned in WSFAB is a passage treating the same topic but constructed completely differently. He is also mentioned in WYBWS and WJHZA also in reference to Ṭāʾif. The name clairification is also found in WYBWS, WMUAL, and WMSAH. @EC_02/03/23@ Updated @EC_12/04/23@
+# @COMMENT: A similar passage is found in WYBWS on BQWXV05P158B, WSFAB on TBRBV03P083B, and in WSACD on ZTTHV02P022C and ZTKXV01P569E, which mentions Abū Bakrah, who is not mentioned in the redaction of Ibn Hishām. He was Nufayʿ b. al-Ḥārith b. Kaladah b. ʿAmr al-Thaqafī. Some say his name was Masrūḥ. He was one of four slaves who came out from Ṭāʾif whom the prophet freed. He was a companion and a source of some traditions. He died in the year 52/672 (HJTTV10P469A-470A). He is also mentioned in WYBWS (BQSXV09P384A, BQWXV05P159A, KTHSV03P657C,  KTHBV04P348A) and WJHZA (SFTXV01P088B) also in reference to Ṭāʾif. @EC_02/03/23@ Updated @EC_12/04/23@
 
 # @HSNXV02P482F_BEG_WZATB قال ابن إسحاق ومعه امرأتان من نسائه إحداهما أم سلمة بنت أبي أمية PageV02P482 فضرب لهما قبتين ثم صلى بين القبتين ثم أقام فلما أسلمت ثقيف بنى على مصلى رسول الله صلى الله عليه وسلم عمرو بن أمية بن وهب بن معتب بن مالك مسجدا وكانت في ذلك المسجد سارية فيما يزعمون لا تطلع الشمس عليها يوما من الدهر إلا سمع لها نقيض فحاصرهم رسول الله صلى الله عليه وسلم وقاتلهم قتالا شديدا وتراموا بالنبل. @HSNXV02P482F_END_WZATB
 PageV02P483
@@ -11462,6 +11468,17 @@ PageV01P126
 # @TMMXV01P130B_BEG_WZATB حدثني غير واحد عن أسد عن @TR1_ZATB@ زياد عن أبي إسحاق قال حدثني شيخ من طيء قال كان حابس بن سعد رجلا قد شرف بالشام وكان يسكنها زمن عمر بن الخطاب قال فقدم وافدا على عمر بن الخطاب فقال له عمر ويحك إن أردنا أن نستعملك على بعض أعمالنا في بلادك فكيف أنت قاض بين الناس إن وليناك ما هناك فقال أقضي فيه بكتاب الله وسنة رسول الله صلى الله عليه وسلم فإن لم أجد سنة رسول الله صلى الله عليه وسلم اجتهدت فيه برأي قال عمر قضى الذي عليه اذهب فقد وليناك كذا وكذا قال فولي غير بعيد ثم رجع فقال يا أمير المؤمنين قد رأيت رؤيا وأردت أن أعرضها عليك قال ما هي قال رأيت الشمس والقمر اختلفا فرأيت مع هذا ناسا ومع هذا ناسا قال فمع أيهما كنت قال مع القمر قال مع الآية الممحوة لا والله لا تكن لي على عمل أبدا فالحق PageV01P130 بشأنك فقتل مع معاوية بصفين فمر به علي بن أبي طالب وهو منعفر في التراب فضربه برجله ثم قال خدعوك والله يا أبا سعيد بدنياهم عن دينك. @TMMXV01P130B_END_WZATB
 PageV01P131
 # @COMMENT: The isnād lists al-Bakkāʾī’s informant as “Abī Ishāq,” but this appears to be a mistake and is instead a reference to Muḥammad b. Isḥāq. @EC_12/11/23@
+
+### ||| من توفوا في هذه السنة
+
+# @TDSHV12P263C_BEG_WZATB
+VAR_TLBXV05P2157B حدثنا بذلك كله @TR2_AMIH@ ابن هشام عن @TR1_ZATB@ زياد عن ابن إسحاق وتوفي حذيفة بن اليمان سنة ستة وثلاثين في أولها له رواية كثيرة عن النبي صلى الله عليه وسلم. @TDSHV12P263C_END_WZATB
+PageV12P263
+# @COMMENT: Note that although Ibn Hishām is cited as the source this passage is not located in the redacted versions that come down to us. @EC_07/31/26@
+
+# @TLBXV05P2157B_BEG_WZATB
+VAR_TDSHV12P263C حدثنا بذلك كله ابن هشام عن زياد عن ابن اسحاق وتوفي حذيفة بن اليمان سنة ست وثلاثين في أولها له رواية كثيرة عن النبي صلى الله عليه وسلم. @TLBXV05P2157B_END_WZATB
+PageV05P2157
 
 ### || ثم دخلت سنة سبع وثلاثين
 
