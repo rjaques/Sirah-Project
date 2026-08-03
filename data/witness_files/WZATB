@@ -10381,6 +10381,9 @@ PageV02P521
 PageV02P522
 # @COMMENT: A similar, although shorter passage comprising the first third of the above, is found in WYBWS on RJSBV03P238C. @EC_07/10/26@
 
+# @KTHSV04P021B_BEG_WYBWS وفي رواية زياد عن ابن إسحاق أن طيئا أهدته إلى رسول الله صلى الله عليه وسلم حين رجع إلى المدينة. @KTHSV04P021B_END_WYBWS
+PageV04P021
+
 # @HSNXV02P522C_BEG_WZATB
 VAR_DHSLV02P165C قال ابن إسحاق فلما أصبح الناس ولا ماء معهم شكوا ذلك إلى رسول الله صلى الله عليه وسلم فدعا رسول الله صلى الله عليه وسلم فأرسل الله سبحانه سحابة فأمطرت حتى ارتوى الناس واحتملوا حاجتهم من الماء. @HSNXV02P522C_END_WZATB
 PageV02P522
@@ -11312,7 +11315,7 @@ PageV02P663
 
 # @HSNXV02P663D_BEG_WZATB قال ابن إسحاق وحدثني حسين بن عبد الله عن عكرمة عن ابن عباس قال لما أرادوا أن يحفروا لرسول الله صلى الله عليه وسلم وكان أبو عبيدة بن الجراح يضرح كحفر أهل مكة وكان أبو طلحة زيد بن سهل هو الذي يحفر لأهل المدينة فكان يلحد فدعا العباس رجلين فقال لأحدهما اذهب إلى أبي عبيدة بن الجراح وللآخر اذهب إلى أبي طلحة اللهم خر لرسول الله صلى الله عليه وسلم فوجد صاحب أبي طلحة أبا طلحة فجاء به فلحد لرسول الله صلى الله عليه وسلم والصلاة عليه فلما فرغ من جهاز رسول الله صلى الله عليه وسلم يوم الثلاثاء وضع في سريره في بيته وقد كان المسلمون اختلفوا في دفنه فقال قائل ندفنه في مسجده وقال قائل بل ندفنه مع أصحابه فقال أبو بكر إني سمعت رسول الله صلى الله عليه وسلم يقول ما قبض نبي إلا دفن حيث يقبض فرفع فراش رسول الله صلى الله عليه وسلم الذي توفي عليه فحفر له تحته ثم دخل الناس على رسول الله صلى الله عليه وسلم يصلون عليه أرسالا دخل الرجال حتى إذا فرغوا أدخل النساء حتى إذا فرغ النساء أدخل الصبيان ولم يؤم الناس على رسول الله صلى الله عليه وسلم أحد PageV02P663 ثم دفن رسول الله صلى الله عليه وسلم من وسط الليل ليلة الأربعاء. @HSNXV02P663D_END_WZATB
 PageV02P664
-# @COMMENT: This passage discusses the funeral prayer for Muḥammad and is found in WSACD: BLJXV01P573A, MYWXV01P032A, DHRQV01P312B; WYBWS: BQSKV07P362D, BQWXV07P250B, BQSXV04P048A, QZHXV14P582D; WZATB: HSNXV02P663D; WABAB: MYWXV01P031A, JJKXV03P214A, BQWXV07P260C, KTHBV05P266A, KTHSV04P530E; WSFAB: TBRBV03P213A; and WBSAB: JSHXV05P2361A. @EC_12/07/23@ @EC_07/28/26@
+# @COMMENT: This passage discusses the burial and funeral prayer for Muḥammad. Stories recounting the prayer are found in WSACD: BLJXV01P573A, MYWXV01P032A, DHRQV01P312B; WYBWS: BQSKV07P362D, BQWXV07P250B, BQSXV04P048A, QZHXV14P582D; WZATB: HSNXV02P663D; WABAB: MYWXV01P031A, JJKXV03P214A, BQWXV07P260C, KTHBV05P266A, KTHSV04P530E; WSFAB: TBRBV03P213A; and WBSAB: JSHXV05P2361A. @EC_12/07/23@ EC_07/28/26@ As in this passage, there are a few witnesses that combine the prayer and the story of how Muḥammad’s grave was dug and by whom. For the diging of the grave see WYBWS on BQWXV07P252B, BQSXV03P571A, DHSNV02P340F, and DHTIV01P579D; WSACD on HBHXV01P212C, BLJXV01P573A, MYWXV01P032A, DHRQV01P312B (In WSACD there are several accounts that combine the stories of the washing of Muḥammad’s body along with the story of deciding who dug the grave, which include: HBHXV04P186A, JWJXV04P222B, KTHNV05P281C); WJHZA on HBHXV04P404A, SMJXV01P520A, AAMZV02P056D; WABAB on MYWXV01P031A, JJKXV03P214J, BQWXV07P260C, KTHSV04P530E, KTHNV05P287K; and WSFAB on TBRBV03P213A. @EC_08/03/26@ 
 
 ### ||| دفن الرسول SEE_HSNXV02P664B
 
