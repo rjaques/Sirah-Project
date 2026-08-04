@@ -10097,7 +10097,7 @@ VAR_THRXV04P042C حدثنا سليمان بن أحمد ثنا أبو زرعة ا
 # @COMMENT: A roughly similar fragment is also loacted in WZATB on HSNXV02P482F in reference to the arrival of the Thaqīf in Ramaḍān. Variations much more similar to this passage are also found in WZATB on NYMXV04P2217D and THRXV04P042C. An analogous fragment is also found in WAKMW on SMJXV01P559D, STBXV17P169C, NYMXV04P2217A, NYMXV04P2217D, MZTXV20P150A, and KTHRV06P165B; WSACD on HJRSV03P086C; WIMTR on DKHXV03P224B, NYMXV03P1300D, NYMXV04P2217D, THRXV04P042C, KTHRV06P165B, and HJRSV03P086C; and WYBWS on NYMXV04P2217D, THRXV04P042C, and KTHRV06P165B. Placement based on content. @EC_12/11/23@
 
 # @THRXV04P042C_BEG_WZATB
-VAR_NYMXV04P2217D أخبرنا عبيد الله بن أحمد بإسناده عن @TR1_YBWS@ يونس بن بكير عن محمد بن إسحاق عن عيسى بن عبد الملك بن مالك عن عطية بن سفيان بن عبد الله بن ربيعة قال قدم وفد ثقيف على رسول الله صلى الله عليه وسلم في رمضان فضرب لهم قبة في المسجد فلما أسلموا صاموا معه ولم يذكر ابن إسحاق أنه أمرهم بقضاء ما مضى منه ورواه @TR1_ZATB@ زياد البكائي @TR1_IMTR@ وإبراهيم بن المختار عن عيسى بن عبد الله فقال عن علقمة بن سفيان وقيل عن عطية عن بعض وفدهم أخرجه ابن منده وأبو نعيم. @ZATBYBWS
+VAR_NYMXV04P2217D أخبرنا عبيد الله بن أحمد بإسناده عن @TR1_YBWS@ يونس بن بكير عن محمد بن إسحاق عن عيسى بن عبد الملك بن مالك عن عطية بن سفيان بن عبد الله بن ربيعة قال قدم وفد ثقيف على رسول الله صلى الله عليه وسلم في رمضان فضرب لهم قبة في المسجد فلما أسلموا صاموا معه ولم يذكر ابن إسحاق أنه أمرهم بقضاء ما مضى منه ورواه @TR1_ZATB@ زياد البكائي @TR1_IMTR@ وإبراهيم بن المختار عن عيسى بن عبد الله فقال عن علقمة بن سفيان وقيل عن عطية عن بعض وفدهم أخرجه ابن منده وأبو نعيم. @THRXV04P042C_END_WZATB
 PageV04P042
 
 ### ||| يوم الشدخة SEE_HSNXV02P483D
@@ -10124,7 +10124,7 @@ PageV02P486
 
 ### ||| شهداء المسلمين يوم الطائف SEE_HSNXV02P486C
 
-# @HSNX_BEG_WZATB قال ابن إسحاق وهذه تسمية من استشهد من المسلمين مع رسول الله صلى الله عليه وسلم يوم الطائف من قريش ثم من بني أمية بن عبد شمس سعيد بن سعيد بن العاص بن أمية وعرفطة بن جناب حليف لهم من الأسد بن الغوث. @HSNXV02P486C_END_WZATB
+# @HSNXV02P486C_BEG_WZATB قال ابن إسحاق وهذه تسمية من استشهد من المسلمين مع رسول الله صلى الله عليه وسلم يوم الطائف من قريش ثم من بني أمية بن عبد شمس سعيد بن سعيد بن العاص بن أمية وعرفطة بن جناب حليف لهم من الأسد بن الغوث. @HSNXV02P486C_END_WZATB
 PageV02P486
 
 # @HSNXV02P486E_BEG_WZATB قال ابن إسحاق ومن بني تيم بن مرة عبد الله بن أبي بكر الصديق رمي بسهم فمات منه بالمدينة بعد وفاة رسول الله صلى الله عليه وسلم ومن بني مخزوم عبد الله بن أبي أمية بن المغيرة من رمية رميها يومئذ ومن بني عدي بن كعب عبد الله بن عامر بن ربيعة حليف لهم ومن بني سهم بن عمرو السائب بن الحارث بن قيس بن عدي وأخوه عبد الله بن الحارث ومن بني سعد بن ليث جليحة بن عبد الله واستشهد من الأنصار من بني سلمة ثابت بن الجذع PageV02P486 ومن بني مازن بن النجار الحارث بن سهل بن أبي صعصعة ومن بني ساعدة المنذر بن عبد الله ومن الأوس رقيم بن ثابت بن ثعلبة بن زيد بن لوذان بن معاوية فجميع من استشهد بالطائف من أصحاب رسول الله صلى الله عليه وسلم اثنا عشر رجلا سبعة من قريش وأربعة من الأنصار ورجل من بني ليث فلما انصرف رسول الله صلى الله عليه وسلم عن الطائف بعد القتال والحصار قال بجير بن زهير بن أبي سلمى يذكر حنينا والطائف
@@ -10896,7 +10896,7 @@ PageV02P592
 PageV02P596
 
 ### || ذكر الكذابين مسيلمة الحنفي والأسود العنسي SEE_HSNXV02P599B
-ن
+
 # @HSNXV02P599C_BEG_WZATB قال ابن إسحاق وقد كان تكلم في عهد رسول الله صلى الله عليه وسلم الكذابان مسيلمة بن حبيب باليمامة في بني حنيفة والأسود بن كعب العنسي بصنعاء. @HSNXV02P599C_END_WZATB
 PageV02P599
 
@@ -11321,7 +11321,7 @@ PageV02P663
 
 # @HSNXV02P663D_BEG_WZATB قال ابن إسحاق وحدثني حسين بن عبد الله عن عكرمة عن ابن عباس قال لما أرادوا أن يحفروا لرسول الله صلى الله عليه وسلم وكان أبو عبيدة بن الجراح يضرح كحفر أهل مكة وكان أبو طلحة زيد بن سهل هو الذي يحفر لأهل المدينة فكان يلحد فدعا العباس رجلين فقال لأحدهما اذهب إلى أبي عبيدة بن الجراح وللآخر اذهب إلى أبي طلحة اللهم خر لرسول الله صلى الله عليه وسلم فوجد صاحب أبي طلحة أبا طلحة فجاء به فلحد لرسول الله صلى الله عليه وسلم والصلاة عليه فلما فرغ من جهاز رسول الله صلى الله عليه وسلم يوم الثلاثاء وضع في سريره في بيته وقد كان المسلمون اختلفوا في دفنه فقال قائل ندفنه في مسجده وقال قائل بل ندفنه مع أصحابه فقال أبو بكر إني سمعت رسول الله صلى الله عليه وسلم يقول ما قبض نبي إلا دفن حيث يقبض فرفع فراش رسول الله صلى الله عليه وسلم الذي توفي عليه فحفر له تحته ثم دخل الناس على رسول الله صلى الله عليه وسلم يصلون عليه أرسالا دخل الرجال حتى إذا فرغوا أدخل النساء حتى إذا فرغ النساء أدخل الصبيان ولم يؤم الناس على رسول الله صلى الله عليه وسلم أحد PageV02P663 ثم دفن رسول الله صلى الله عليه وسلم من وسط الليل ليلة الأربعاء. @HSNXV02P663D_END_WZATB
 PageV02P664
-# @COMMENT: This passage discusses the burial and funeral prayer for Muḥammad. Stories recounting the prayer are found in WSACD: BLJXV01P573A, MYWXV01P032A, DHRQV01P312B; WYBWS: BQSKV07P362D, BQWXV07P250B, BQSXV04P048A, QZHXV14P582D; WZATB: HSNXV02P663D; WABAB: MYWXV01P031A, JJKXV03P214A, BQWXV07P260C, KTHBV05P266A, KTHSV04P530E; WSFAB: TBRBV03P213A; and WBSAB: JSHXV05P2361A. @EC_12/07/23@ EC_07/28/26@ As in this passage, there are a few witnesses that combine the prayer and the story of how Muḥammad’s grave was dug and by whom. For the diging of the grave see WYBWS on BQWXV07P252B, BQSXV03P571A, DHSNV02P340F, and DHTIV01P579D; WSACD on HBHXV01P212C, BLJXV01P573A, MYWXV01P032A, DHRQV01P312B (In WSACD there are several accounts that combine the stories of the washing of Muḥammad’s body along with the story of deciding who dug the grave, which include: HBHXV04P186A, JWJXV04P222B, KTHNV05P281C); WJHZA on HBHXV04P404A, SMJXV01P520A, AAMZV02P056D; WABAB on MYWXV01P031A, JJKXV03P214J, BQWXV07P260C, KTHSV04P530E, KTHNV05P287K; and WSFAB on TBRBV03P213A. @EC_08/03/26@ 
+# @COMMENT: This passage discusses the burial and funeral prayer for Muḥammad. Stories recounting the prayer are found in WSACD: BLJXV01P573A, MYWXV01P032A, DHRQV01P312B; WYBWS: BQSKV07P362D, BQWXV07P250B, BQSXV04P048A, QZHXV14P582D; WABAB: MYWXV01P031A, JJKXV03P214A, BQWXV07P260C, KTHBV05P266A, KTHSV04P530E; WSFAB: TBRBV03P213A; and WBSAB: JSHXV05P2361A. @EC_12/07/23@ EC_07/28/26@ As in this passage, there are a few witnesses that combine the prayer and the story of how Muḥammad’s grave was dug and by whom. For the diging of the grave see WYBWS on BQWXV07P252B, BQSXV03P571A, DHSNV02P340F, and DHTIV01P579D; WSACD on HBHXV01P212C, BLJXV01P573A, MYWXV01P032A, DHRQV01P312B (In WSACD there are several accounts that combine the stories of the washing of Muḥammad’s body along with the story of deciding who dug the grave, which include: HBHXV04P186A, JWJXV04P222B, KTHNV05P281C); WJHZA on HBHXV04P404A, SMJXV01P520A, AAMZV02P056D; WABAB on MYWXV01P031A, JJKXV03P214J, BQWXV07P260C, KTHSV04P530E, KTHNV05P287K; and WSFAB on TBRBV03P213A. @EC_08/03/26@ 
 
 ### ||| دفن الرسول SEE_HSNXV02P664B
 
