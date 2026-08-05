@@ -20,8 +20,7 @@ PageV04P379
 # @THSMV02P096D_BEG_WHSDB
 VAR_THSHV04P379A VAR_RZZIV03P063B VAR_STBXV18P316B VAR_TDSHV12P036D VAR_MZSHV08P263C VAR_KTHRV07P020A VAR_AAMZV02P066A VAR_YNQXV11P036B وحدثنا حسين بن نصر قال ثنا يحيى بن حسان قالوا ثنا @TR1_HSDB@ حماد بن سلمة عن محمد بن إسحاق عن @EW1_YAHA@ يزيد بن أبي حبيب عن أبي مرزوق عن حنش عن فضالة عن رسول الله صلى الله عليه وسلم مثله قيل لهم وهذا أيضا مثل الأول يجوز ولكني قئت فضعفت عن الصوم فأفطرت. @THSMV02P096D_END_WHSDB
 PageV02P096
-## @Comment: Aḥmad b. Muḥammad al-Ṭaḥāwī states:
-وليس في هذين الحديثين دليل على أن القيء كان مفطرا له إنما فيه أنه قاء فأفطر بعد ذلك وقد روي في حكم الصائم إذا قاء أو استقاء عن النبي صلى الله عليه وسلم مفسرا.
+# @COMMENT: Aḥmad b. Muḥammad al-Ṭaḥāwī states, "There is nothing in these traditions to indicate that vomiting, in itself, nullified his fast. Rather, they only state that he vomited and *then* broke his fast. Moreover, there are reports from the Prophet that explicitly clarify the opinion regarding a fasting person who vomits or induces himself to vomit."
 
 # @RZZIV03P063B_BEG_WHSDB
 VAR_THSHV04P379A VAR_THSMV02P096D VAR_STBXV18P316B VAR_TDSHV12P036D VAR_MZSHV08P263C VAR_KTHRV07P020A VAR_AAMZV02P066A VAR_YNQXV11P036B وسمعت أبي وذكر حديثا رواه @TR1_HSDB@ حماد بن سلمة عن محمد بن إسحاق عن @EW1_YAHA@ يزيد بن أبي حبيب عن أبي مرزوق عن فضالة بن عبيد أن رسول الله صلى الله عليه وسلم أتي بإناء فشرب فقالوا يا رسول الله هذا يوم كنت تصومه قال أجل ولكني قئت فأفطرت. @RZZIV03P063B_END_WHSDB
