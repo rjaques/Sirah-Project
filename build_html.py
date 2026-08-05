@@ -620,9 +620,20 @@ def format_section_content(section):
     if section.startswith("# @COMMENT"):
         #print("SECTION STARTS WITH # @COMMENT:")
         #print(section[:100])
-        first_comment = re.findall(r".+?\n\n+", section)[0]
+        matches = re.findall(r".+?\n\n+", section)
+
+        if not matches:
+            print("\nERROR: A section lacks the expected text and blank line.")
+            print("SECTION CONTENT:")
+            print(repr(section[:1000]))
+            print("----------------------------------------")
+            raise ValueError(
+            "Malformed section: expected text followed by a blank line"
+            )
+
+        first_comment = matches[0]
         s += format_comment(first_comment.strip())
-        section = section[len(first_comment)-1].strip()
+        section = section[len(first_comment)-1:].strip()
 
     # initialize the lists that will contain the data for a single report (possibly multiple variants!)
     witness_texts = []
