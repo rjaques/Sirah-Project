@@ -616,13 +616,13 @@ def format_section_content(section):
     # initialize the string that will contain the html code for the entire section:
     s = ""
 
-    # deal with sections that start with a comment: 
+     # deal with sections that start with a comment:
     if section.startswith("# @COMMENT"):
-        #print("SECTION STARTS WITH # @COMMENT:")
-        #print(section[:100])
+        # print("SECTION STARTS WITH # @COMMENT:")
+        # print(section[:100])
         first_comment = re.findall(r".+?\n\n+", section)[0]
         s += format_comment(first_comment.strip())
-        section = section[len(first_comment)-1].strip()
+        section = section[len(first_comment)-1:].strip()
 
     # initialize the lists that will contain the data for a single report (possibly multiple variants!)
     witness_texts = []
