@@ -5643,7 +5643,7 @@ PageV01P572
 # @HBHXV43P369A_BEG_WSACD
 VAR_BRWXV24P396C VAR_HJRTV17P736A VAR_HJIIV09P327A حدثنا @TR2_YISI@ يعقوب حدثنا @TR1_SACD@ أبي عن ابن إسحاق قال حدثني عبد الله بن أبي بكر بن محمد بن عمرو بن حزم عن امرأته فاطمة بنت محمد بن عمارة عن عمرة بنت عبد الرحمن بن سعد بن زرارة PageV43P369 عن عائشة أم المؤمنين قالت ما علمنا بدفن رسول الله صلى الله عليه وسلم حتى سمعنا صوت المساحي من جوف الليل ليلة الأربعاء. @HBHXV43P369A_END_WSACD
 PageV43P370
-# @COMMENT: A similar passage is found in WZATB on HSNXV02P664C but is phrased differently. Also see WASKA, WYSAU, WSFAB, WSASN, and WYBWS. Also note: A different version, more similar to the above, is witnessed by WZATB is found in BLJXV01P568C.  @EC_12/07/23@
+# @COMMENT: This passage, not found in the redaction of Ibn Hishām, records the suprise members of the community felt when they found out the Prophet had died only when they heard digging in ʿĀʾishah’s apartment. It is located in WSACD on HBHXV43P369A, BRWXV24P396C, HJRTV17P736A, HJIIV09P327A. Also see WASKA on HBHXV40P390B, DHRSV05P459A, THSMV01P514A, BRKXV03P056A, BRWXV24P396D, HJRTV17P736A, and HJIIV09P327A; WSFAB on TBRBV03P213B; WYSAU on NSKHV01P282A; WSASN on TBRBV03P217F; WYBWS on BQSXV03P574A, BQWYV07P256D, KTHBV05P270D, and KTHSV04P538B. @EC_12/07/23@ @08/10/26@
 
 # @BRWXV24P396C_BEG_WSACD
 VAR_HBHXV43P369A VAR_HJRTV17P736A VAR_HJIIV09P327A وحدثنا عبد الوارث قال حدثنا قاسم قال حدثنا أحمد بن زهير قال حدثنا @TR2_AMIB@ أحمد بن محمد بن أيوب حدثنا @TR1_SACD@ إبراهيم بن سعد عن محمد بن إسحاق قال حدثني عبد الله بن أبي بكر بن محمد بن عمرو بن حزم عن امرأته فاطمة ابنة محمد بن عمارة عن عمرة بنت عبد الرحمن عن عائشة قالت ما علمنا بدفن رسول الله صلى الله عليه وسلم حتى سمعنا صوت المساحي من جوف الليل ليلة الأربعاء. @BRWXV24P396C_END_WSACD
@@ -5656,6 +5656,7 @@ PageV17P736
 # @HJIIV09P327A_BEG_WSACD
 VAR_HBHXV43P369A VAR_BRWXV24P396C VAR_HJRTV17P736A حديث ما علمنا بدفن رسول الله صلى الله عليه وسلم حتى سمعنا صوت المساحي من جوف الليل ليلة الأربعاء حدثنا @TR2_YISI@ يعقوب ثنا @TR1_SACD@ أبي عن ابن إسحاق حدثني عبد الله بن أبي بكر بن محمد بن عمرو بن حزم عن امرأته فاطمة بنت محمد عن عمرة بهذا قال ابن إسحاق وقد حدثتني فاطمة بهذا الحديث وعن @TR1_ASKA@ عبدة بن سليمان عن محمد بن إسحاق عن فاطمة بنت PageV09P327 محمد عن عمرة نحوه قال ابن إسحاق المساحي المرور. @HJIIV09P327A_END_WSACD
 PageV09P328
+# @COMMENT: This passage, not found in the redaction of Ibn Hishām, but it should follow HSNXV02P664C, to comform with narrative flow. It records the suprise members of the community felt when they found out the Prophet had died only when they heard digging in ʿĀʾishah’s apartment. It is located in WASKA on HBHXV40P390B, DHRSV05P459A, THSMV01P514A, BRKXV03P056A, BRWXV24P396D, HJRTV17P736A, and HJIIV09P327A; WSFAB on TBRBV03P213B; WYSAU on NSKHV01P282A; WSASN on TBRBV03P217F; WYBWS on BQSXV03P574A, BQWYV07P256D, KTHBV05P270D, and KTHSV04P538B. @EC_12/07/23@ @08/10/26@
 
 ### ||| أحدث الناس عهدا بالرسول
 
