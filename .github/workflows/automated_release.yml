@@ -6,14 +6,16 @@ on:
 jobs:
   quarterly-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0 # latest commit only
 
       - name: install python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
       
@@ -32,10 +34,7 @@ jobs:
           git commit -m "create release" -a
 
       - name: push the changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
-           branch: main
+        run: git push origin HEAD:main
 
       - name: tag the release
         run: |
