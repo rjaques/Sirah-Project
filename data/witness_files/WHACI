@@ -90,15 +90,18 @@ PageV04P055
 PageV01P043
 # @COMMENT: This passage describes the twelve sons of Ismāʿīl b. Ibrāhīm. There is a significant amount of variation in the Ibn Isḥāq corpus on the names of Ismāʿīl’s sons and on the identity of their mother. An analogous passage is found in WZATB on HSNXV01P004E, SHBHV02P022B, and HMTKV01P098B lists their mother as Raʿlah bint* Muḍāḍ b. ʿAmr al-Jurhumī, although there are slight variations in the names of the sons, mostly due to dropping or adding dots (*iʿjām*) over and under letters. Also see WSACD on TKXXV01P047A and HJRFV06P303D that lists Raʿlah bint* Muḍāḍ b. ʿAmr al-Jurhumī. There is a second tradition group that gives the mother’s name as al-Sayyīdah *bint* Muḍāḍ b. ʿAmr al-Jurhumī. These include WSFAB on TBRBV01P314C and WUASQ on MAAMV01P080B and SHBHV02P022C. WUASQ also lists a very different list of names for Ismāʿīl’s sons. @EC_09/21/26@
 
-# @TKXXV01P048A_BEG_WHACI
-VAR_TDSHV03P058A قال أخبرنا رؤيم بن يزيد المقرئ عن @TR1_HACI@ هارون بن أبي عيسى الشامي عن محمد بن إسحاق أنه كان ينسب معد بن عدنان على غير هذا النسب في بعض روايته يقول معد بن عدنان بن مقوم بن ناحور بن تيرح بن يعرب بن يشجب بن نابت بن إسماعيل. @TKXXV01P048A_END_WHACI
+# @TKXXV01P048B_BEG_WHACI
+VAR_TDSHV03P058A قال أخبرنا رؤيم بن يزيد المقرئ عن @TR1_HACI@ هارون بن أبي عيسى الشامي عن محمد بن إسحاق أنه كان ينسب معد بن عدنان على غير هذا النسب في بعض روايته يقول معد بن عدنان بن مقوم بن ناحور بن تيرح بن يعرب بن يشجب بن نابت بن إسماعيل. @TKXXV01P048B_END_WHACI
 PageV01P048
+# @COMMENT: The quotation above mentions the son of ʿAdnān: Maʿadd. He is mentioned in WZATB (although less frequently in the redaction of Ibn Hishām), on HSNXV01P008B, NZDXV02P017D, and HSNXV01P010C (listing a few of his descendants). WSFAB mentions Maʿadd b. ʿAdnān in many genealogies:  ZTTHV01P101B, ZTTHV01P125A, ZTTHV01P128A, ZTTHV01P137E, ZTTHV01P151C, ZTTHV01P195E, ZTKXV01P204B, ZTKXV01P290F, ZTKXV01P269A, ZTKXV01P290H, ZTKXV01P566H, ZTKXV02P734A, ZTKXV02P734A, ZTKXV02P745B, ZTKXV02P746B, ZTKXV02P759B, and ZTKXV02P819A. He is also mentioned in the genealogies of the Quraysh in WYBWS on BKHBV01P005B and BKHWV01P014A and in WAYSS on STJXV08P154B. @EC_09/22/26@ 
+
+
 
 # @TDSHV03P058A_BEG_WHACI
-VAR_TKXXV01P048A قال ابن سعد وأنا رؤيم  بن يزيد المقرئ عن @TR1_HACI@ هارون بن أبي عيسى الشآمي عن محمد بن إسحاق أنه كان ينسب معد بن عدنان على غير هذا النسب في بعض روايته يقول معد بن عدنان بن مقوم بن ناخور بن تيرح بن يعرب بن يشجب بن ثابت بن إسماعيل. @TDSHV03P058A_END_WHACI
+VAR_TKXXV01P048B قال ابن سعد وأنا رؤيم  بن يزيد المقرئ عن @TR1_HACI@ هارون بن أبي عيسى الشآمي عن محمد بن إسحاق أنه كان ينسب معد بن عدنان على غير هذا النسب في بعض روايته يقول معد بن عدنان بن مقوم بن ناخور بن تيرح بن يعرب بن يشجب بن ثابت بن إسماعيل. @TDSHV03P058A_END_WHACI
 PageV03P058
 
-# @TKXXV01P048B_BEG_WHACI قال محمد بن إسحاق: وقد انتمى قصي بن كلاب إلى قيذر في بعض شعره @TKXXV01P048B_END_WHACI
+# @TKXXV01P048D_BEG_WHACI قال محمد بن إسحاق: وقد انتمى قصي بن كلاب إلى قيذر في بعض شعره @TKXXV01P048D_END_WHACI
 PageV01P048
 # @COMMENT: TKXXV01P048B follows an interveining tradition. Appears to be linked to TKXXV01P048A.
 
